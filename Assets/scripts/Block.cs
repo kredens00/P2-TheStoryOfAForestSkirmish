@@ -10,7 +10,7 @@ public class Block : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
     }
 
 void Update()
@@ -20,8 +20,7 @@ void Update()
 
     Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-    Rigidbody rb = GetComponent<Rigidbody>();
 
-    rb.AddForce(movement * speed);
+    transform.position += movement * speed * Time.deltaTime;
 }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obiekt : MonoBehaviour
 {
     private bool isClickable = true;
-    private float interactionDistance = 1f; // maksymalna odległość interakcji
+    private float interactionDistance = 0.3f; // maksymalna odległość interakcji
 
     private void Update()
     {
