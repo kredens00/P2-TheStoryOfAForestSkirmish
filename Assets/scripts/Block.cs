@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 1f;
 
-    private Rigidbody rb;
-
-    private void Start()
-    {
-        
-    }
 
 void Update()
 {
@@ -20,7 +14,22 @@ void Update()
 
     Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
+    Sprint();
 
     transform.position += movement * speed * Time.deltaTime;
+
 }
+
+    void Sprint()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 2.0f;
+        }
+
+        if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = 1f;
+        }
+    }
 }
