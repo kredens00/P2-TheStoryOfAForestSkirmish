@@ -27,7 +27,7 @@ public class NPCtrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       if(other.tag == "NPC")
+       if(other.tag == "Player")
         {
             triggering = true;
             triggeringNpc = other.gameObject;
@@ -38,7 +38,7 @@ public class NPCtrigger : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if(other.tag == "NPC")
+        if(other.tag == "Player")
         {
             triggering = false;
             triggeringNpc = null;

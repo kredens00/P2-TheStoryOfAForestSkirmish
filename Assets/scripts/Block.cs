@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public float speed = 1f;
+    public float walkSpeed = 3f;
+    public float sprintSpeed = 5f;
 
 
 void Update()
@@ -16,7 +17,7 @@ void Update()
 
     Sprint();
 
-    transform.position += movement * speed * Time.deltaTime;
+    transform.position += movement * walkSpeed * Time.deltaTime;
 
 }
 
@@ -24,12 +25,13 @@ void Update()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 2.0f;
+            walkSpeed = sprintSpeed;
         }
+      
 
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 1f;
+            walkSpeed = 3f;
         }
     }
 }
