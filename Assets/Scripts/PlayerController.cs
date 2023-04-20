@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Block : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+
     public float walkSpeed = 3f;
     public float sprintSpeed = 5f;
 
@@ -33,5 +35,19 @@ void Update()
         {
             walkSpeed = 3f;
         }
+    }
+
+    //Death
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Trap"))
+        {
+            RestartLevel();
+        }
+    }
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene("Startowy dom");
     }
 }

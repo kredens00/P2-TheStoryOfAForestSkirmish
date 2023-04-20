@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class follow : MonoBehaviour
+public class Follow : MonoBehaviour
 {
 
     public GameObject player;
