@@ -2,11 +2,31 @@ using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
 {
+    public static InventoryUI Instance;
     public Transform itemsParent;
     public GameObject inventory_UI;
     Inventory inventory;
 
     InventorySlot[] slots;
+
+
+    private void Awake()
+    {
+        if (Instance != null)
+
+        {
+            Destroy(gameObject);
+
+        }
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+            Instance = this;
+        }
+
+
+    }
+
     void Start()
     {
         inventory = Inventory.Instance;
