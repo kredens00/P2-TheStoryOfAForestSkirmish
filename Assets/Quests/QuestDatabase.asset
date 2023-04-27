@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 339a500bc89346c6a2df2486013048fd, type: 3}
+  m_Name: QuestDatabase
+  m_EditorClassIdentifier: 
+  questDefinitions:
+  - {fileID: 4063213528969683491}
+--- !u!114 &4063213528969683491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324b5808905d4a6cb51baa31cfef459d, type: 3}
+  m_Name: Przesylka dla babci
+  m_EditorClassIdentifier: 
+  _id: 9d8ba278-3b30-4a5d-a9c6-9a17490349f1
+  _description: "Babcia le\u017Cy schorowana w swoim domku w lesie. Porozmawiaj z
+    mam\u0105, jak mo\u017Cesz jej pomoc."
+  _tasks:
+  - {fileID: 5024869962065883183}
+  - {fileID: 5123532263175746081}
+--- !u!114 &5024869962065883183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: Porozmawiaj z mama
+  m_EditorClassIdentifier: 
+  _id: fc5855bb-e059-4669-b9ad-0c8458f68c6f
+  _parent: {fileID: 4063213528969683491}
+  _description: "Mama przygotowuje co\u015B dla babci. Zapytaj co mozesz dla niej
+    zrobic"
+--- !u!114 &5123532263175746081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: Lorem ipsum
+  m_EditorClassIdentifier: 
+  _id: ab40ead3-8e32-4d08-959e-d5c76d362acd
+  _parent: {fileID: 4063213528969683491}
+  _description: Dolor sit amet

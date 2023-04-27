@@ -1,5 +1,37 @@
 {
   "dependencies": {
+    "com.fluid.adnc-utilities": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
+    "com.fluid.quest-journal": {
+      "version": "1.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.fluid.adnc-utilities": "1.0.0",
+        "com.fluid.simple-settings": "1.0.1",
+        "com.fluid.simple-singleton": "1.0.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.fluid.simple-settings": {
+      "version": "1.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
+    "com.fluid.simple-singleton": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
     "com.unity.burst": {
       "version": "1.7.3",
       "depth": 1,
