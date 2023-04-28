@@ -14,6 +14,7 @@ public class PlayerInstance : MonoBehaviour
         {
             DontDestroyOnLoad(this.gameObject);
             instance = this;
+            respNr = "Start1";
         }
         else { 
         

@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CleverCrow.Fluid.QuestJournals;
+using CleverCrow.Fluid.QuestJournals.Quests;
 
-public class MyFirstQuest : MonoBehaviour
+public class QuestUpdater : MonoBehaviour
 {
-    private IQuestInstance _questInstance;
+    public IQuestInstance _questInstance;
     public QuestDefinitionBase quest;
 
     void Start()
@@ -14,6 +15,7 @@ public class MyFirstQuest : MonoBehaviour
 
         // Prints Ongoing
         Debug.Log(_questInstance.Status);
+        Debug.Log(_questInstance.ActiveTask.Title);
     }
 
     public void NextTask()
@@ -21,6 +23,8 @@ public class MyFirstQuest : MonoBehaviour
         _questInstance.Next();
 
         // Prints the current task name
-        Debug.Log(_questInstace.ActiveTask.Title);
+        Debug.Log(_questInstance.ActiveTask.Title);
     }
+
+    
 }
