@@ -27,7 +27,7 @@ public class SpawnPoint : MonoBehaviour
 
                 if(PlayerInstance.respNr != null && !PlayerInstance.respNr.Equals(""))
                     {
-                    start = GameObject.FindGameObjectWithTag(PlayerInstance.respNr);
+                    start = GameObject.Find(PlayerInstance.respNr);
                 }
 
                 Vector3 pos = transf.position;

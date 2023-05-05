@@ -49,5 +49,6 @@ void Update()
     private void RestartLevel()
     {
         SceneManager.LoadScene("Startowy dom");
+        PlayerInstance.respNr = "Start1";
     }
 }
