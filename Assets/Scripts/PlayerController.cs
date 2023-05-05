@@ -3,51 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
-{
+[RequireComponent(typeof(PlayerMotor))]
+public class PlayerController : MonoBehaviour {
 
-    public float walkSpeed = 3f;
-    public float sprintSpeed = 5f;
+    public LayerMask movementMask;
+    
+    Camera cam;
+
+    PlayerMotor motor;
+    void Start () {
+        cam = Camera.main;
+        motor = GetComponent<PlayerMotor>();
+    }
 
 
-void Update()
-{
-    float moveHorizontal = Input.GetAxis("Horizontal");
-    float moveVertical = Input.GetAxis("Vertical");
 
-    Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+    void Update(){ 
+        if (Input.GetMouseButtonDown(0))
+        {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
 
-    Sprint();
+        
 
-    transform.position += movement * walkSpeed * Time.deltaTime;
-
+        if (Physics.Raycast(ray, out hit, 100, movementMask))
+            {
+            motor.MoveToPoint(hit.point);
+            Debug.Log (" uderzyles" + hit.collider.name + " " + hit.point);
+            }
+        }
+    }   
 }
-
-    void Sprint()
-    {
-        if(Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            walkSpeed = sprintSpeed;
-        }
-      
-
-        if(Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            walkSpeed = 3f;
-        }
-    }
-
-    //Death
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Trap"))
-        {
-            RestartLevel();
-        }
-    }
-
-    private void RestartLevel()
-    {
-        SceneManager.LoadScene("Startowy dom");
-    }
-}
+   

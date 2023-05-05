@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Follow : MonoBehaviour
 {
-
     public GameObject player;
     void Start()
     {
@@ -14,6 +13,6 @@ public class Follow : MonoBehaviour
     void Update()
     {
         Vector3 player_position = player.transform.position;
-        transform.position = new Vector3(player_position.x, player_position.y + 1, transform.position.z);
+        transform.position = new Vector3(player_position.x, player_position.y + 3, transform.position.z);
     }
 }
