@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
-  m_Name: "Odnies m\u0142otek \u015Bwinkom"
+  m_Name: "Odnies \u0142om \u015Bwince"
   m_EditorClassIdentifier: 
   _id: 096e320f-b8b6-4232-a3a1-d698e52f0306
   _parent: {fileID: 2983117682350612464}
-  _description: "Przynie\u015B zgub\u0119 podpitym wieprzom."
+  _description: "Przynie\u015B zgub\u0119 podpitemu wieprzowi."
 --- !u!114 &-8779546490714014894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +62,22 @@ MonoBehaviour:
   _id: b6a6c6c7-056a-4f7f-9d43-6f927da10eed
   _parent: {fileID: -8779546490714014894}
   _description: Naucz sie jak sie gra do cholery jasnej
+--- !u!114 &2267854011710778323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: Pogadaj z warchlakiem
+  m_EditorClassIdentifier: 
+  _id: 141c30f9-c4a1-4945-91b0-3cc6d45a8f25
+  _parent: {fileID: 2983117682350612464}
+  _description: "Widzisz zdenerwowanego prosiaka, kt\xF3ry \u0142ypie na ciebie przekrwionymi
+    oczami. Pogadaj z nim."
 --- !u!114 &2983117682350612464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +94,7 @@ MonoBehaviour:
   _description: "Trzy \u015Bwinki opowiadaj\u0105 o z\u0142ym wilku, kt\xF3ry zdmuchn\u0105\u0142
     im dom. Potrzebuj\u0105 pomocy przy odbudowaniu domu"
   _tasks:
+  - {fileID: 2267854011710778323}
   - {fileID: 4393180322494880052}
   - {fileID: -8938611357578303903}
 --- !u!114 &4063213528969683491
@@ -108,13 +125,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
-  m_Name: Znajdz mlotek
+  m_Name: "Znajdz \u0142om"
   m_EditorClassIdentifier: 
   _id: 24dfa984-ee1d-45ab-8c5f-47c6415165a7
   _parent: {fileID: 2983117682350612464}
-  _description: "\u015Awinki do budowy domu potrzebuj\u0105 m\u0142otka, jednak ich
-    stan wskazuje na upojenie alkoholowe, co uniemo\u017Cliwia im p\xF3j\u015Bcie
-    po narz\u0119dzie. "
+  _description: "\u015Awinki do budowy domu potrzebuj\u0105 brechy, jednak ich stan
+    wskazuje na upojenie alkoholowe, co uniemo\u017Cliwia im p\xF3j\u015Bcie po narz\u0119dzie. "
 --- !u!114 &5024869962065883183
 MonoBehaviour:
   m_ObjectHideFlags: 0
