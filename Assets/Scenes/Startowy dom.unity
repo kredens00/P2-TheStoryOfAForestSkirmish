@@ -2546,7 +2546,7 @@ MonoBehaviour:
   m_BoundingVolume: {fileID: 0}
   m_BoundingShape2D: {fileID: 1979346825}
   m_ConfineScreenEdges: 0
-  m_Damping: 0.34
+  m_Damping: 0
 --- !u!1 &648413029
 GameObject:
   m_ObjectHideFlags: 0
@@ -5274,7 +5274,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.8, y: 0}
+  m_Offset: {x: 1.55, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5286,8 +5286,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.4640852, y: 2.0608773}
-      - {x: -1.3570167, y: -4.9728303}
+    - - {x: 0.73134935, y: 2.1392856}
+      - {x: 0.7077373, y: -4.894422}
       - {x: 14.68026, y: -4.910044}
       - {x: 14.732397, y: 2.109552}
 --- !u!4 &1979346826
@@ -6337,17 +6337,17 @@ PrefabInstance:
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.28395352
+      value: 0.26846057
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2433925
+      value: 2.399725
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -91.51931
+      value: -91.00386
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
@@ -6422,12 +6422,12 @@ PrefabInstance:
     - target: {fileID: 6660527686460749927, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: near clip plane
-      value: -1.97
+      value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: 6660527686460749927, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: orthographic size
-      value: 4.33
+      value: 5.33
       objectReference: {fileID: 0}
     - target: {fileID: 7087092876087234769, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
@@ -6442,12 +6442,12 @@ PrefabInstance:
     - target: {fileID: 7087092876087234769, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_Lens.NearClipPlane
-      value: -1.97
+      value: -2.39
       objectReference: {fileID: 0}
     - target: {fileID: 7087092876087234769, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 4.33
+      value: 5.33
       objectReference: {fileID: 0}
     - target: {fileID: 7604831034505793578, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
@@ -6507,17 +6507,17 @@ PrefabInstance:
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.28395352
+      value: 0.26846057
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2433925
+      value: 2.399725
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -91.51931
+      value: -91.00386
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
