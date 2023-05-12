@@ -25,7 +25,7 @@ public class DialogManager : MonoBehaviour
 
         Debug.Log("Konwersacja rozpoczeta. Zaladowane wiadomosci: " + messages.Length);
         DisplayMessage();
-        backgroundBox.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();
+        
     }
 
     void DisplayMessage()
@@ -36,7 +36,7 @@ public class DialogManager : MonoBehaviour
         Actor actorToDisplay = currentActors[messageToDisplay.actorId];
         actorName.text = actorToDisplay.name;
         actorImage.sprite = actorToDisplay.sprite;
-        AnimateTextColor();
+        
     }
 
     void NextMessage()
@@ -47,17 +47,13 @@ public class DialogManager : MonoBehaviour
             DisplayMessage();
         } else
         {
-            backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
+            
             isActive = false;
             Debug.Log("Koniec konwersacji");
         }
     }
 
-    void AnimateTextColor()
-    {
-        LeanTween.textAlpha(messageText.rectTransform, 0, 0);
-        LeanTween.textAlpha(messageText.rectTransform, 1, 0.5f);
-    }
+   
 
     void Start()
     {
