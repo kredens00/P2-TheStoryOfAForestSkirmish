@@ -23,4 +23,12 @@ public class NpcDialog : MonoBehaviour
            
         }
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Player") == false)
+        {
+            
+        }
+    }
 }
