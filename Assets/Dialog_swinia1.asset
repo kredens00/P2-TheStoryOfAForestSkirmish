@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6422416043790388807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 373
+    y: 309
+    width: 190
+    height: 145
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Wiesz mo\u017Ce jak przej\u015B\u0107 do k\u0142adki?"
+  - "Nie, nie zgubi\u0142am si\u0119"
+  - 
+  - 
+  parentSentenceNode: {fileID: 1557564202819395488}
+  childSentenceNodes:
+  - {fileID: -5515877558690728024}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &-5515877558690728024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 600
+    y: 332
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Staszek
+    text: "Mo\u017Ce i wiem, ale nawet jeA mo\u017Ce i wiem, ale tak mi w pysku zasch\u0142o,
+      \u017Ce chyba nie dam rady ci powiedzie\u0107! Potrzebuje jab\u0142koc\xF3wki"
+    characterSprite: {fileID: 21300000, guid: e55d0f877a2e3ba4d973e14836ee803d, type: 3}
+  parentNode: {fileID: -6422416043790388807}
+  childNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Dialog_swinia1
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: 1557564202819395488}
+  - {fileID: -6422416043790388807}
+  - {fileID: -5515877558690728024}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &1557564202819395488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 134
+    y: 315
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Staszek
+    text: "*HIK* E panienko nie zgubi\u0142a\u015B si\u0119 przypadkiem?"
+    characterSprite: {fileID: 21300000, guid: e55d0f877a2e3ba4d973e14836ee803d, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -6422416043790388807}

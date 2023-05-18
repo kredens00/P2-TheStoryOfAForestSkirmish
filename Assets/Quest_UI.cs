@@ -6,6 +6,10 @@ public class Quest_UI : MonoBehaviour
 {
     public static Quest_UI instance;
     public GameObject questUI;
+   
+   
+    
+    
     // Start is called before the first frame update
 
     private void Awake()
@@ -32,6 +36,7 @@ public class Quest_UI : MonoBehaviour
     {
         if(Input.GetButtonDown("Quest"))
         {
+
             questUI.SetActive(!questUI.activeSelf);
         }
     }

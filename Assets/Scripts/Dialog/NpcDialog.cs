@@ -11,24 +11,25 @@ public class NpcDialog : MonoBehaviour
     private DialogBehaviour trigger;
     [SerializeField]
     private DialogNodeGraph graph;
+    [SerializeField]
+    private DialogNodeGraph graph_finished;
+    private bool isFinished;
     
    
     // Start is called before the first frame update
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player") == true)
+        if(collision.gameObject.CompareTag("Player") == true && !isFinished)
         {
             trigger.StartDialog(graph);
-           
+            isFinished = true;
+        }
+        else
+        {
+            trigger.StartDialog(graph_finished);
         }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("Player") == false)
-        {
-            
-        }
-    }
+ 
 }
