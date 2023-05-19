@@ -12,7 +12,7 @@ public class Quest_UI : MonoBehaviour
     
     // Start is called before the first frame update
 
-    private void Awake()
+  /*  private void Awake()
     {
         if (instance != null)
 
@@ -29,7 +29,7 @@ public class Quest_UI : MonoBehaviour
         void Start()
     {
         
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
