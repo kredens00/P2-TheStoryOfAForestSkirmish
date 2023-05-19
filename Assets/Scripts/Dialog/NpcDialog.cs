@@ -27,7 +27,11 @@ public class NpcDialog : MonoBehaviour
         }
         else
         {
-            trigger.StartDialog(graph_finished);
+            if(graph_finished != null)
+            {
+                trigger.StartDialog(graph_finished);
+            }
+            
         }
     }
 

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
-  m_Name: "Odnies \u0142om \u015Bwince"
+  m_Name: "Odnies m\u0142otek prosiakom"
   m_EditorClassIdentifier: 
   _id: 096e320f-b8b6-4232-a3a1-d698e52f0306
   _parent: {fileID: 2983117682350612464}
@@ -31,6 +31,21 @@ MonoBehaviour:
   _description: Blyblybly
   _tasks:
   - {fileID: 2046725156318312375}
+--- !u!114 &-7511881334195876538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Odnajd\u017A but"
+  m_EditorClassIdentifier: 
+  _id: f42a3d05-6acd-41bb-82d1-f5de7e4bf5d5
+  _parent: {fileID: 6026623480776620400}
+  _description: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +62,7 @@ MonoBehaviour:
   - {fileID: 4063213528969683491}
   - {fileID: 2983117682350612464}
   - {fileID: -8779546490714014894}
+  - {fileID: 6026623480776620400}
 --- !u!114 &2046725156318312375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,12 +141,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
-  m_Name: "Znajdz \u0142om"
+  m_Name: "Znajdz m\u0142otek"
   m_EditorClassIdentifier: 
   _id: 24dfa984-ee1d-45ab-8c5f-47c6415165a7
   _parent: {fileID: 2983117682350612464}
-  _description: "\u015Awinki do budowy domu potrzebuj\u0105 brechy, jednak ich stan
-    wskazuje na upojenie alkoholowe, co uniemo\u017Cliwia im p\xF3j\u015Bcie po narz\u0119dzie. "
+  _description: "\u015Awinki do budowy domu potrzebuj\u0105 m\u0142otka, jednak ich
+    stan wskazuje na upojenie alkoholowe, co uniemo\u017Cliwia im p\xF3j\u015Bcie
+    po narz\u0119dzie. "
+--- !u!114 &4419092273185197041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Odnie\u015B but bezdomnemu"
+  m_EditorClassIdentifier: 
+  _id: 1f021861-f8bc-47bc-99dc-a9e954ec7626
+  _parent: {fileID: 6026623480776620400}
+  _description: 
 --- !u!114 &5024869962065883183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +194,22 @@ MonoBehaviour:
   _parent: {fileID: 4063213528969683491}
   _description: "Z pomoc\u0105 wskaz\xF3wek mamy, odnajd\u017A drog\u0119 do domku
     babci."
+--- !u!114 &6026623480776620400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324b5808905d4a6cb51baa31cfef459d, type: 3}
+  m_Name: "Zimno w stop\u0119"
+  m_EditorClassIdentifier: 
+  _id: 9196c56d-f763-42cd-8052-116ea1f4b028
+  _description: "Bezdomny oferuj\u0119 ci uczciw\u0105 wymian\u0119. But w zamian
+    za m\u0142otek dla \u015Bwinek. Tylko gdzie mo\u017Ce znajdowa\u0107 si\u0119
+    but?"
+  _tasks:
+  - {fileID: -7511881334195876538}
+  - {fileID: 4419092273185197041}
