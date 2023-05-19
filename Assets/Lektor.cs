@@ -10,7 +10,7 @@ public class Lektor : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        PlayAudio();
+        
     }
 
     public void PlayAudio()

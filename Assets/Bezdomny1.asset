@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 942
-    y: 364
+    x: 994
+    y: 375
     width: 170
     height: 115
   isDragging: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   sentence:
     characterName: Menelaos
     text: "Dzisiaj Niedziela! Wszystko zamkni\u0119te psia ma\u0107! A co by\u015B
-      chcia\u0142a kupi\u0107? M\u0142otek? Cekoj chwilk\u0119..."
+      chcia\u0142a kupi\u0107? "
     characterSprite: {fileID: 21300000, guid: 039b97c084e03314b9ff7f69715e2e1c, type: 3}
   parentNode: {fileID: 6660402292928753453}
   childNode: {fileID: 3529531940026492392}
@@ -57,6 +57,35 @@ MonoBehaviour:
     characterSprite: {fileID: 21300000, guid: 0132fd96a0555a049aa277493907f196, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 6660402292928753453}
+--- !u!114 &-465311104092880155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 871
+    y: 255
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Menelaos
+    text: "Dzisiaj Niedziela! Wszystko zamkni\u0119te psia ma\u0107! A co by\u015B
+      chcia\u0142a kupi\u0107? "
+    characterSprite: {fileID: 21300000, guid: 039b97c084e03314b9ff7f69715e2e1c, type: 3}
+  parentNode: {fileID: 6660402292928753453}
+  childNode: {fileID: 3529531940026492392}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +106,7 @@ MonoBehaviour:
   - {fileID: 8909344110020357119}
   - {fileID: 3529531940026492392}
   - {fileID: 3329368538469736659}
+  - {fileID: -465311104092880155}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &1994704347500620798
@@ -103,8 +133,9 @@ MonoBehaviour:
   isSelected: 0
   sentence:
     characterName: Menelaos
-    text: "Mam tutaj swoje towary! Oczywi\u015Bcie znalezione, nie skradzione! Mam
-      tutaj pi\u0119kny okaz m\u0142otka pospolitego. Oddam za buta."
+    text: "M\u0142otek? Cekoj chwilke... Mam tutaj swoje towary! Oczywi\u015Bcie
+      znalezione, nie skradzione! Mam tutaj pi\u0119kny okaz m\u0142otka pospolitego.
+      Oddam za buta."
     characterSprite: {fileID: 21300000, guid: 039b97c084e03314b9ff7f69715e2e1c, type: 3}
   parentNode: {fileID: 3529531940026492392}
   childNode: {fileID: 8909344110020357119}
@@ -163,7 +194,7 @@ MonoBehaviour:
     characterName: kapturek
     text: "Potrzebuj\u0119 m\u0142otka, wiesz mo\u017Ce gdzie go znajd\u0119?"
     characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
-  parentNode: {fileID: -6563033637084410326}
+  parentNode: {fileID: -465311104092880155}
   childNode: {fileID: 1994704347500620798}
 --- !u!114 &6660402292928753453
 MonoBehaviour:
@@ -195,7 +226,7 @@ MonoBehaviour:
   parentSentenceNode: {fileID: -1287658121934074666}
   childSentenceNodes:
   - {fileID: -6563033637084410326}
-  - {fileID: 0}
+  - {fileID: -465311104092880155}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!114 &8909344110020357119
