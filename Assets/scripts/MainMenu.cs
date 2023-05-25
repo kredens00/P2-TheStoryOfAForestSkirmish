@@ -6,12 +6,24 @@ public class MainMenu : MonoBehaviour
 {
     public Button startButton;
     public Button exitButton;
+    public Button settingsButton;
+    public GameObject settingsCanvas;
+    public GameObject startCanvas;
 
     void Start()
     {
         // Przypisanie funkcji do przycisków
         startButton.onClick.AddListener(LoadScene);
         exitButton.onClick.AddListener(ExitGame);
+        settingsButton.onClick.AddListener(Settings);
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            settingsCanvas.SetActive(false);
+            startCanvas.SetActive(true);
+        }
     }
 
     void LoadScene()
@@ -30,5 +42,11 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Gra została zamknięta.");
         // Wychodzenie z gry (tylko w wersji standalone, nie działa w Unity Editor)
         Application.Quit();
+    }
+    void Settings()
+    {
+        startCanvas.SetActive(false);
+        settingsCanvas.SetActive(true);
+       
     }
 }
