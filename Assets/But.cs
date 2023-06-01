@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class But : MonoBehaviour
 {
-    private Inventory inventory;
+    private Inventory _inventory;
     public Item item;
     public GameObject swinia_1;
     public GameObject swinia_2;
     // Start is called before the first frame update
-    
-    private void Awake()
+
+
+   void Start()
     {
-        Inventory inventory = GetComponent<Inventory>();
+        _inventory = GameObject.Find("GameManager").GetComponent<Inventory>();
     }
-    void Start()
+    void Update()
     {
        
-        if(inventory.items.Contains(item))
+        if(_inventory.items.Contains(item))
         {
+           
             swinia_1.SetActive(false);
             swinia_2.SetActive(true);
         }

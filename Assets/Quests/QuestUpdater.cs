@@ -32,6 +32,8 @@ public class QuestUpdater : MonoBehaviour
     public void CompleteTask()
     {
         _questInstance.Complete();
+        Debug.Log(_questInstance.Status);
+        
     }
 
     

@@ -6,8 +6,8 @@ namespace cherrydev
 {
     public class SentencePanel : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI dialogNameText;
-        [SerializeField] private TextMeshProUGUI dialogText;
+        [SerializeField] private Text dialogNameText;
+        [SerializeField] private Text dialogText;
         [SerializeField] private Image dialogCharacterImage;
 
         private void Start()
