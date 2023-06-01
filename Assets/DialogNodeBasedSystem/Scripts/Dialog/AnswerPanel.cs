@@ -9,7 +9,7 @@ namespace cherrydev
     public class AnswerPanel : MonoBehaviour
     {
         [SerializeField] private List<Button> buttons = new List<Button>();
-        [SerializeField] private List<TextMeshProUGUI> buttonTexts;
+        [SerializeField] private List<Text> buttonTexts;
 
         /// <summary>
         /// Returning button by index
@@ -26,7 +26,7 @@ namespace cherrydev
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public TextMeshProUGUI GetButtonTextByIndex(int index)
+        public Text GetButtonTextByIndex(int index)
         {
             return buttonTexts[index];
         }
