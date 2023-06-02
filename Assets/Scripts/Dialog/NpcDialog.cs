@@ -29,12 +29,14 @@ public class NpcDialog : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        PlayerController playerController = gameObject.GetComponent<PlayerController>();
         isTalking = true;
         dialogCanvas.SetActive(true);
         if(isTalking)
         {
             if (collision.gameObject.CompareTag("Player") == true && !isFinished)
             {
+                
                 trigger.StartDialog(graph);
                 isFinished = true;
                 tasks.Invoke();
@@ -44,11 +46,13 @@ public class NpcDialog : MonoBehaviour
             {
                 if (graph_finished != null)
                 {
+                   
                     trigger.StartDialog(graph_finished);
 
                 }
 
             }
+            
         }
        
     }

@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsParent: {fileID: 7461305830522359236}
-  inventory_UI: {fileID: 0}
+  inventory_UI: {fileID: 7461305831211121366}
 --- !u!1 &7461305832019477609
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ RectTransform:
   m_GameObject: {fileID: 7461305832019477609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7596076, y: 0.7596076, z: 0.7596076}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7461305830522359236}
@@ -258,7 +258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -184, y: 68.5}
+  m_AnchoredPosition: {x: -143, y: 48}
   m_SizeDelta: {x: 366.858, y: 114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7461305832019477615

@@ -2,15 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
 
-    public float walkSpeed = 3f;
-    public float sprintSpeed = 5f;
+    public float walkSpeed;
+    public float sprintSpeed;
+    private RaycastHit hit;
+    private NavMeshAgent agent;
 
 
-void Update()
+
+    private void Start()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
+    void Update()
 {
     float moveHorizontal = Input.GetAxis("Horizontal");
     float moveVertical = Input.GetAxis("Vertical");
@@ -21,6 +29,13 @@ void Update()
 
     transform.position += movement * walkSpeed * Time.deltaTime;
 
+
+        if(Input.GetMouseButtonDown(0))
+        {
+           
+                transform.position += (movement + hit.point) * walkSpeed *Time.deltaTime;
+            
+        }
 }
 
     void Sprint()
@@ -31,10 +46,10 @@ void Update()
         }
       
 
-        if(Input.GetKeyUp(KeyCode.LeftShift))
+       /* if(Input.GetKeyUp(KeyCode.LeftShift))
         {
-            walkSpeed = 3f;
-        }
+            walkSpeed = walkSpeed;
+        }*/
     }
 
     //Death
