@@ -31,6 +31,21 @@ MonoBehaviour:
   _description: Blyblybly
   _tasks:
   - {fileID: 2046725156318312375}
+--- !u!114 &-8288824453747180444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Odzyskaj m\u0142otek od bezdomnego"
+  m_EditorClassIdentifier: 
+  _id: 824bdb71-a40d-4b79-b809-0066801b2462
+  _parent: {fileID: 2983117682350612464}
+  _description: "Uko\u0144cz quest \"Zimno w stop\u0119\""
 --- !u!114 &-7511881334195876538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +127,7 @@ MonoBehaviour:
   _tasks:
   - {fileID: 2267854011710778323}
   - {fileID: 4393180322494880052}
+  - {fileID: -8288824453747180444}
   - {fileID: -8938611357578303903}
 --- !u!114 &4063213528969683491
 MonoBehaviour:
