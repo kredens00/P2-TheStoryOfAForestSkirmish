@@ -1908,6 +1908,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2111656715}
   - {fileID: 1531457612}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -4389,12 +4390,12 @@ PrefabInstance:
     - target: {fileID: 5446926713131867831, guid: f5467e143f53a234ea2cc0a1de74a457,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5446926713131867831, guid: f5467e143f53a234ea2cc0a1de74a457,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.24
+      value: 8.18
       objectReference: {fileID: 0}
     - target: {fileID: 5446926713131867831, guid: f5467e143f53a234ea2cc0a1de74a457,
         type: 3}
@@ -6303,6 +6304,87 @@ Transform:
   m_Father: {fileID: 1962841318}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2111656714
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 398376084}
+    m_Modifications:
+    - target: {fileID: 3629504090547267937, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 66a734193738e2548a4917814822ad37,
+        type: 2}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3470511
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.242799
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 65.64601
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267966, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: m_Name
+      value: Lektor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ae371dba2dac414bbcf5115708a13e6, type: 3}
+--- !u!4 &2111656715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3629504090547267939, guid: 8ae371dba2dac414bbcf5115708a13e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111656714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2128981366
 GameObject:
   m_ObjectHideFlags: 0
