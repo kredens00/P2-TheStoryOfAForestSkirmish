@@ -22,16 +22,27 @@ public class LevelLoader : MonoBehaviour
     {
         
         SceneManager.LoadScene(scene);
-        //var nextScene = SceneManager.GetSceneByName(scene);
-        //StartCoroutine(SetActive(nextScene));
+        var nextScene = SceneManager.GetSceneByName(scene);
+        
+
+       // StartCoroutine(SetActive(nextScene));
         
     }
 
-    /*public IEnumerator SetActive(Scene scene)
+    private void SetGameObjectsActive(GameObject[] objects, bool active)
+    {
+        for (int i = 0; i < objects.Length; i++)
+        {
+            objects[i].gameObject.SetActive(active);
+        }
+    }
+
+   /* public IEnumerator SetActive(Scene scene)
     {
         int i = 0;
-        while (i != 3)
+        while (i < 1)
         {
+            SetGameObjectsActive(SceneManager.GetActiveScene().GetRootGameObjects(), false);
             i++;
             yield return null;
         }

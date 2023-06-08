@@ -41,6 +41,15 @@ public class PlayerController : MonoBehaviour
             {
                 sprite.flipX = false;
             }
+
+            if(moveVertical > 0f)
+            {
+                animator.SetBool("gora", true);
+            }
+            else
+            {
+                animator.SetBool("gora", false);
+            }
         }
         else
         {
