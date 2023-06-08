@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class follow : MonoBehaviour
+public class Follow : MonoBehaviour
 {
 
     public GameObject player;
@@ -14,6 +14,6 @@ public class follow : MonoBehaviour
     void Update()
     {
         Vector3 player_position = player.transform.position;
-        transform.position = new Vector3(player_position.x, player_position.y + 1, transform.position.z);
+        transform.position = new Vector3(player_position.x, player_position.y + 2, player_position.z -6 );
     }
 }
