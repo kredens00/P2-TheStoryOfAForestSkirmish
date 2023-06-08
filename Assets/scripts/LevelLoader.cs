@@ -22,5 +22,20 @@ public class LevelLoader : MonoBehaviour
     {
         
         SceneManager.LoadScene(scene);
+        //var nextScene = SceneManager.GetSceneByName(scene);
+        //StartCoroutine(SetActive(nextScene));
+        
     }
+
+    /*public IEnumerator SetActive(Scene scene)
+    {
+        int i = 0;
+        while (i != 3)
+        {
+            i++;
+            yield return null;
+        }
+        SceneManager.SetActiveScene(scene);
+        yield break;
+    }*/
 }

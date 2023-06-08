@@ -11,45 +11,79 @@ public class PlayerController : MonoBehaviour
     public float sprintSpeed;
     private RaycastHit hit;
     private NavMeshAgent agent;
-
+    private Animator animator;
+    private SpriteRenderer sprite;
+    bool isSprinting;
 
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
+
     }
     void Update()
-{
-    float moveHorizontal = Input.GetAxis("Horizontal");
-    float moveVertical = Input.GetAxis("Vertical");
-
-    Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-
-    Sprint();
-
-    transform.position += movement * walkSpeed * Time.deltaTime;
-
-
-        if(Input.GetMouseButtonDown(0))
+    {
+        
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+        bool isMoving = Mathf.Abs(moveHorizontal) > 0.1f || Mathf.Abs(moveVertical) > 0.1f;
+        
+        if (isMoving)
         {
-           
-                transform.position += (movement + hit.point) * walkSpeed *Time.deltaTime;
-            
+            animator.SetBool("Walking", true);
+            if (moveHorizontal < 0)
+            {
+                sprite.flipX = true;
+            }
+            else
+            {
+                sprite.flipX = false;
+            }
         }
-}
+        else
+        {
+            animator.SetBool("Walking", false);
+        }
+
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        transform.position += movement * walkSpeed * Time.deltaTime;
+        Sprint();
+        
+        
+       
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            transform.position += (movement + hit.point) * walkSpeed * Time.deltaTime;
+
+        }
+    }
 
     void Sprint()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        
+        
+        if (Input.GetKey(KeyCode.LeftShift))
         {
+            
             walkSpeed = sprintSpeed;
-        }
-      
-
-       /* if(Input.GetKeyUp(KeyCode.LeftShift))
+            animator.SetBool("Running", true);
+        } else
         {
-            walkSpeed = walkSpeed;
-        }*/
+            walkSpeed = 8;
+            animator.SetBool("Running", false);
+        }
+       
+
+
+        /* if(Input.GetKeyUp(KeyCode.LeftShift))
+         {
+             walkSpeed = walkSpeed;
+         }*/
     }
 
     //Death

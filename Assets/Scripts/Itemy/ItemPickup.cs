@@ -6,9 +6,12 @@ using UnityEngine.Events;
 
 public class ItemPickup : Interactable
 {
+    public static ItemPickup Instance;
     [SerializeField]
     public UnityEvent tasks;
     public Item item;
+
+    
     public override void Interact()
     {
         base.Interact();
@@ -23,6 +26,7 @@ public class ItemPickup : Interactable
         {
             tasks.Invoke(); 
             Destroy(gameObject);
+            
         }
 
     }
