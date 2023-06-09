@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
     private SpriteRenderer sprite;
+    
     bool isSprinting;
 
 
@@ -20,7 +21,8 @@ public class PlayerController : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        sprite = GetComponent<SpriteRenderer>();
+        sprite= GetComponent<SpriteRenderer>();
+        
 
     }
     void Update()
@@ -28,35 +30,34 @@ public class PlayerController : MonoBehaviour
         
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-        bool isMoving = Mathf.Abs(moveHorizontal) > 0.1f || Mathf.Abs(moveVertical) > 0.1f;
-        
-        if (isMoving)
-        {
-            animator.SetBool("Walking", true);
-            if (moveHorizontal < 0)
-            {
-                sprite.flipX = true;
-            }
-            else
-            {
-                sprite.flipX = false;
-            }
-
-            if(moveVertical > 0f)
-            {
-                animator.SetBool("gora", true);
-            }
-            else
-            {
-                animator.SetBool("gora", false);
-            }
-        }
-        else
-        {
-            animator.SetBool("Walking", false);
-        }
-
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        
+        
+            animator.SetFloat("Horizontal", moveHorizontal);
+            animator.SetFloat("Vertical", moveVertical);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+           
+        if(moveHorizontal < 0)
+        {
+            sprite.flipX = true;
+        } else
+        {
+            sprite.flipX = false;
+        }
+        
+        
+
+        if(Input.GetKey(KeyCode.E)) 
+        {
+
+            animator.SetBool("pickup", true);
+
+        } else
+        {
+            animator.SetBool("pickup", false);
+        }
+
+        
         transform.position += movement * walkSpeed * Time.deltaTime;
         Sprint();
         

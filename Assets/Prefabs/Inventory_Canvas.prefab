@@ -651,6 +651,42 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 41.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6099156270443061939, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6099156270443061939, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6099156270443061939, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4314365990566664357, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+    - target: {fileID: 6099156270443061939, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6099156270443061939, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ClearSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6099156270443061939, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: InventorySlot, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6099156270443061939, guid: 8c54b25d68bc5354e8735292e63f51f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7129827921853261315, guid: 8c54b25d68bc5354e8735292e63f51f1,
         type: 3}
       propertyPath: m_Pivot.x

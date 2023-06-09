@@ -23,6 +23,11 @@ public class InventorySlot : MonoBehaviour
         icon.enabled=false;
     }
 
+    public void OnRemoveButton()
+    {
+        Inventory.Instance.Remove(item);
+    }
+
     public void UseItem ()
     {
         if (item != null)

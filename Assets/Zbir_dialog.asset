@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7403933842185262922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 804
+    y: 429
+    width: 190
+    height: 145
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Zabieraj \u0142apy brudasie!"
+  - Szukam drogi do babuni!
+  - 
+  - 
+  parentSentenceNode: {fileID: 4168415976897645122}
+  childSentenceNodes:
+  - {fileID: -220572183918954433}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &-6030241345950848999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1280
+    y: 452
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kapturek
+    text: Jaki znowu klucz?! Do mojego domu?
+    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+  parentNode: {fileID: -220572183918954433}
+  childNode: {fileID: 9216591089431250169}
+--- !u!114 &-220572183918954433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1059
+    y: 442
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Zbir Jasiek
+    text: Albo dajesz klucz albo wyjazd z baru!
+    characterSprite: {fileID: 21300000, guid: 11ecc15929b58184ab4763483726aa66, type: 3}
+  parentNode: {fileID: -7403933842185262922}
+  childNode: {fileID: -6030241345950848999}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Zbir_dialog
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: 4168415976897645122}
+  - {fileID: -7403933842185262922}
+  - {fileID: -220572183918954433}
+  - {fileID: -6030241345950848999}
+  - {fileID: 9216591089431250169}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &4168415976897645122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 572
+    y: 414
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Zbir Jasiek
+    text: "E, a panienka to gdzie si\u0119 wybiera?! Nie zamawiali\u015Bmy nikogo!"
+    characterSprite: {fileID: 21300000, guid: 11ecc15929b58184ab4763483726aa66, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -7403933842185262922}
+--- !u!114 &9216591089431250169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1530
+    y: 517
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Zbir Jasiek
+    text: "Te\u017C by m\xF3g\u0142 by\u0107, ale nie tym razem, posia\u0142em gdzie\u015B
+      klucz od bramy do obozu i nigdzie go nie ma. Pom\xF3\u017C mi to si\u0119 prze\u015Blizgniesz."
+    characterSprite: {fileID: 21300000, guid: 11ecc15929b58184ab4763483726aa66, type: 3}
+  parentNode: {fileID: -6030241345950848999}
+  childNode: {fileID: 0}

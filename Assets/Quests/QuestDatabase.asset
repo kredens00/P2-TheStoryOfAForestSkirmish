@@ -61,6 +61,21 @@ MonoBehaviour:
   _id: f42a3d05-6acd-41bb-82d1-f5de7e4bf5d5
   _parent: {fileID: 6026623480776620400}
   _description: 
+--- !u!114 &-2240405606172870467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: Untitled Task
+  m_EditorClassIdentifier: 
+  _id: 8187b57f-8572-429d-a851-ef6f797c96c7
+  _parent: {fileID: 168925771241060730}
+  _description: "Zanie\u015B klucz Ja\u015Bkowi"
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +93,25 @@ MonoBehaviour:
   - {fileID: 2983117682350612464}
   - {fileID: -8779546490714014894}
   - {fileID: 6026623480776620400}
+  - {fileID: 168925771241060730}
+--- !u!114 &168925771241060730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324b5808905d4a6cb51baa31cfef459d, type: 3}
+  m_Name: Klucz
+  m_EditorClassIdentifier: 
+  _id: c5b5355d-d61d-4493-af54-edc513d52c72
+  _description: "Nie przepuszcz\u0105 mnie przez most, p\xF3ki nie odnajd\u0119 klucza..
+    ehh, wszyscy dzisiaj musieli co\u015B zgubi\u0107?"
+  _tasks:
+  - {fileID: 7794852598684519398}
+  - {fileID: -2240405606172870467}
 --- !u!114 &2046725156318312375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,3 +263,18 @@ MonoBehaviour:
   _tasks:
   - {fileID: -7511881334195876538}
   - {fileID: 4419092273185197041}
+--- !u!114 &7794852598684519398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Odnajd\u017A klucz"
+  m_EditorClassIdentifier: 
+  _id: 0fd92423-7392-4d5d-812c-df475b2e8396
+  _parent: {fileID: 168925771241060730}
+  _description: 
