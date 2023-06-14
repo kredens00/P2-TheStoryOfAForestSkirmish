@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class camera_confiner : MonoBehaviour
+public class Camera_confiner : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -11,13 +11,7 @@ public class camera_confiner : MonoBehaviour
     public CinemachineConfiner confiner;
 
 
-    void Start()
-    {
-        
-
-
-
-    }
+   
 
     // Update is called once per frame
     void Update()
