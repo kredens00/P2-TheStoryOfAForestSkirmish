@@ -71,6 +71,11 @@ public class NpcDialog : MonoBehaviour
         tasks.AddListener(action);
     }
 
+    public void Destroy()
+    {
+        Destroy(gameObject);
+    }
+
 
 
 }
