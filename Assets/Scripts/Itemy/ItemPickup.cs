@@ -10,8 +10,15 @@ public class ItemPickup : Interactable
     [SerializeField]
     public UnityEvent tasks;
     public Item item;
+    public string itemID;
 
-    
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey(itemID))
+        {
+            Destroy(gameObject);
+        }
+    }
     public override void Interact()
     {
         base.Interact();
@@ -24,10 +31,22 @@ public class ItemPickup : Interactable
       bool wasPickedUp =  Inventory.Instance.Add(item);
         if (wasPickedUp)
         {
-            tasks.Invoke(); 
+            tasks.Invoke();
+            SavePickedUpItem();
             Destroy(gameObject);
             
         }
 
+    }
+
+    private void SavePickedUpItem()
+    {
+        if(item != null)
+        {
+            PlayerPrefs.SetInt(itemID, 1);
+            PlayerPrefs.Save();
+        }
+       
+        
     }
 }

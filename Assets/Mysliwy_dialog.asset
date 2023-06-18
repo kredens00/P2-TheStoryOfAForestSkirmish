@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 795
-    y: 404
+    x: 323
+    y: 353
     width: 170
     height: 115
   isDragging: 0
@@ -28,6 +28,120 @@ MonoBehaviour:
     characterSprite: {fileID: 21300000, guid: e9c512afb2bb6a346b7409a9f7f6c6aa, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 972544669572218476}
+--- !u!114 &-2559577305570300286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1458
+    y: 410
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mysliwy
+    text: "Hrrrrr...pfuu! Powiem ci, ale znajd\u017A dla mnie jakie\u015B piciu,
+      bo nie wyt\u0142umacz\u0119 ci z takim kapciem w g\u0119bie..."
+    characterSprite: {fileID: 21300000, guid: e9c512afb2bb6a346b7409a9f7f6c6aa, type: 3}
+  parentNode: {fileID: -1014998223661705269}
+  childNode: {fileID: 9058666615011339079}
+--- !u!114 &-2182423267214220616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1055
+    y: 392
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mysliwy
+    text: "HeeEe?*Mlask* Dziecko! Co ty tu robisz?! Zgubi\u0142a\u015B si\u0119?"
+    characterSprite: {fileID: 21300000, guid: e9c512afb2bb6a346b7409a9f7f6c6aa, type: 3}
+  parentNode: {fileID: -1938801471251772100}
+  childNode: {fileID: -1014998223661705269}
+--- !u!114 &-1938801471251772100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 858
+    y: 403
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kapturek
+    text: "Halo prosze pana! Dusi si\u0119 pan? "
+    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+  parentNode: {fileID: 972544669572218476}
+  childNode: {fileID: -2182423267214220616}
+--- !u!114 &-1014998223661705269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1251
+    y: 387
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kapturek
+    text: "Id\u0119 do babci, kt\xF3ra mieszka na skraju lasu! Zna pan pewnie te
+      okolice, powie mi pan jak tam doj\u015B\u0107?"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -2182423267214220616}
+  childNode: {fileID: -2559577305570300286}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,6 +157,11 @@ MonoBehaviour:
   nodesList:
   - {fileID: -7159022910838302051}
   - {fileID: 972544669572218476}
+  - {fileID: -1938801471251772100}
+  - {fileID: -2182423267214220616}
+  - {fileID: -1014998223661705269}
+  - {fileID: -2559577305570300286}
+  - {fileID: 9058666615011339079}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &972544669572218476
@@ -61,8 +180,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1039
-    y: 504
+    x: 616
+    y: 378
     width: 170
     height: 115
   isDragging: 0
@@ -73,4 +192,32 @@ MonoBehaviour:
       musz\u0119 go ustrzeli\u0107!...Gdzie moja dubelt\xF3wka?!...*CHRAP*..."
     characterSprite: {fileID: 21300000, guid: e9c512afb2bb6a346b7409a9f7f6c6aa, type: 3}
   parentNode: {fileID: -7159022910838302051}
+  childNode: {fileID: -1938801471251772100}
+--- !u!114 &9058666615011339079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1488
+    y: 566
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kapturek
+    text: O matko...
+    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+  parentNode: {fileID: -2559577305570300286}
   childNode: {fileID: 0}

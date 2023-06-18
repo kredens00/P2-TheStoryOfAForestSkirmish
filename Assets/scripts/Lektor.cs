@@ -1,15 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class Lektor : MonoBehaviour
 {
     public AudioClip audioClip;
+    public string audioID;
+    public bool onAwake;
 
     private AudioSource audioSource;
+
+   
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        if (PlayerPrefs.HasKey(audioID))
+        {
+            Destroy(gameObject);
+        } else
+        {
+            audioSource = GetComponent<AudioSource>();
+            if(onAwake) {
+                PlayAudio();
+            }
+            
+        }
+        
         
     }
 
@@ -17,5 +33,17 @@ public class Lektor : MonoBehaviour
     {
         audioSource.clip = audioClip;
         audioSource.Play();
+        SaveAudio();
+    }
+
+    private void SaveAudio()
+    {
+        
+        {
+            PlayerPrefs.SetInt(audioID, 1);
+            PlayerPrefs.Save();
+        }
+
+
     }
 }
