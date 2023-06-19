@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using static UnityEditor.Progress;
+
 
 public class NpcDialog : MonoBehaviour
 {
@@ -31,10 +31,14 @@ public class NpcDialog : MonoBehaviour
 
     private void Start()
     {
-        if (npc != null && PlayerPrefs.HasKey(npcID))
+        if (PlayerPrefs.HasKey(npcID))
         {
             Destroy(gameObject);
+            if(npc != null)
+            {
                 npc.SetActive(true);
+            }
+                
            
             
         }
@@ -52,9 +56,15 @@ public class NpcDialog : MonoBehaviour
         if(isTalking)
         {
             
+
             if (collision.gameObject.CompareTag("Player") == true && !isFinished)
             {
-                
+                if (npcID != "")
+                {
+                    PlayerPrefs.SetInt(npcID, 1);
+                    PlayerPrefs.Save();
+                }
+
                 trigger.StartDialog(graph);
                 isFinished = true;
                 tasks.Invoke();
@@ -71,17 +81,13 @@ public class NpcDialog : MonoBehaviour
 
                 }
                 
-                if (npcID !=null)
-                {
-                    PlayerPrefs.SetInt(npcID, 1);
-                    PlayerPrefs.Save();
-                }
+               
                 
             }
 
         }
-       
 
+        isTalking = false;
 
 
 

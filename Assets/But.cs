@@ -22,7 +22,11 @@ public class But : MonoBehaviour
         {
            
             swinia_1.SetActive(false);
-            swinia_2.SetActive(true);
+            if(swinia_2 != null)
+            {
+                swinia_2.SetActive(true);
+            }
+            
         }
     }
 

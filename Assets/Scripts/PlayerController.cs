@@ -105,9 +105,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void RestartLevel()
+    public void RestartLevel()
     {
-        SceneManager.LoadScene("Startowy dom");
-        PlayerInstance.respNr = "Start1";
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("End_game");
+        
+        
     }
 }
