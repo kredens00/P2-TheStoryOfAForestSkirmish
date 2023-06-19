@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+
 public class NpcDialog : MonoBehaviour
 {
 
@@ -23,25 +24,54 @@ public class NpcDialog : MonoBehaviour
     private bool isTalking;
     private bool isFinished;
     public GameObject dialogCanvas;
-
-
+    public string npcID;
+    public GameObject npc;
     
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void Start()
     {
-        PlayerController playerController = gameObject.GetComponent<PlayerController>();
+        if (PlayerPrefs.HasKey(npcID))
+        {
+            Destroy(gameObject);
+            if(npc != null)
+            {
+                npc.SetActive(true);
+            }
+                
+           
+            
+        }
+
+        
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        PlayerController playerController = GameObject.FindObjectOfType<PlayerController>();
+        
+
         isTalking = true;
         dialogCanvas.SetActive(true);
         if(isTalking)
         {
+            
+
             if (collision.gameObject.CompareTag("Player") == true && !isFinished)
             {
-                
+                if (npcID != "")
+                {
+                    PlayerPrefs.SetInt(npcID, 1);
+                    PlayerPrefs.Save();
+                }
+
                 trigger.StartDialog(graph);
                 isFinished = true;
                 tasks.Invoke();
+                
 
             }
+           
             else
             {
                 if (graph_finished != null)
@@ -50,12 +80,19 @@ public class NpcDialog : MonoBehaviour
                     trigger.StartDialog(graph_finished);
 
                 }
-
+                
+               
+                
             }
-            
+
         }
-       
-    }
+
+        isTalking = false;
+
+
+
+    } 
+    
 
     private void OnCollisionExit(Collision collision)
     {
@@ -65,6 +102,8 @@ public class NpcDialog : MonoBehaviour
             dialogCanvas.SetActive(false);
         }
     }
+
+    
 
     public void AddTask(UnityAction action)
     {

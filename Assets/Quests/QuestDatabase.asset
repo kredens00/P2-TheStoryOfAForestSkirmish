@@ -46,6 +46,36 @@ MonoBehaviour:
   _id: 824bdb71-a40d-4b79-b809-0066801b2462
   _parent: {fileID: 2983117682350612464}
   _description: "Uko\u0144cz quest \"Zimno w stop\u0119\""
+--- !u!114 &-8236248465365565770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Znajd\u017A picie dla my\u015Bliwego"
+  m_EditorClassIdentifier: 
+  _id: a0b9bde3-bc3f-4436-aecd-63706add3f83
+  _parent: {fileID: -5718512445116364906}
+  _description: 
+--- !u!114 &-8185606666179514259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Odbierz \u017Carcie"
+  m_EditorClassIdentifier: 
+  _id: 736c9170-adae-473e-92d7-144d9317ce66
+  _parent: {fileID: 6099446557218457689}
+  _description: "Zapytaj dow\xF3dc\u0119 o jedzenie dla podw\u0142adnego Grzesia."
 --- !u!114 &-7511881334195876538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +91,39 @@ MonoBehaviour:
   _id: f42a3d05-6acd-41bb-82d1-f5de7e4bf5d5
   _parent: {fileID: 6026623480776620400}
   _description: 
+--- !u!114 &-5718512445116364906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324b5808905d4a6cb51baa31cfef459d, type: 3}
+  m_Name: Susza, ale nie Sahara
+  m_EditorClassIdentifier: 
+  _id: 4a373ab3-6b80-4082-abe5-0ebfbb1850f4
+  _description: "My\u015Bliwy chyba wie, jak mo\u017Cesz dosta\u0107 si\u0119 do
+    babuni! Musisz tylko znale\u017A\u0107 mu co\u015B do picia...."
+  _tasks:
+  - {fileID: -8236248465365565770}
+  - {fileID: -3704404765022143540}
+--- !u!114 &-3704404765022143540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Odnie\u015B trunek my\u015Bliwemu"
+  m_EditorClassIdentifier: 
+  _id: 5b704025-2943-4979-8387-7759fd31f190
+  _parent: {fileID: -5718512445116364906}
+  _description: 
 --- !u!114 &-2240405606172870467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,11 +134,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
-  m_Name: Untitled Task
+  m_Name: "Zanie\u015B klucz Ja\u015Bkowi"
   m_EditorClassIdentifier: 
   _id: 8187b57f-8572-429d-a851-ef6f797c96c7
   _parent: {fileID: 168925771241060730}
-  _description: "Zanie\u015B klucz Ja\u015Bkowi"
+  _description: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +157,8 @@ MonoBehaviour:
   - {fileID: -8779546490714014894}
   - {fileID: 6026623480776620400}
   - {fileID: 168925771241060730}
+  - {fileID: -5718512445116364906}
+  - {fileID: 6099446557218457689}
 --- !u!114 &168925771241060730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +177,22 @@ MonoBehaviour:
   _tasks:
   - {fileID: 7794852598684519398}
   - {fileID: -2240405606172870467}
+--- !u!114 &555689847322778881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Dosta\u0144 si\u0119 do obozu bandyt\xF3w"
+  m_EditorClassIdentifier: 
+  _id: 0085ecb8-c3b0-4197-8e60-590be5ee0aa1
+  _parent: {fileID: 6099446557218457689}
+  _description: "Grzesiu zostawi\u0142 sw\xF3j posi\u0142ek bez glutenu w obozie.
+    Nie mo\u017Ce opu\u015Bci\u0107 warty, a musi zje\u015B\u0107."
 --- !u!114 &2046725156318312375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +325,21 @@ MonoBehaviour:
   _parent: {fileID: 4063213528969683491}
   _description: "Z pomoc\u0105 wskaz\xF3wek mamy, odnajd\u017A drog\u0119 do domku
     babci."
+--- !u!114 &5397208108213410124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ab881f0f4c8da0723ccbee1664f0, type: 3}
+  m_Name: "Zanie\u015B makowca Grzesiowi"
+  m_EditorClassIdentifier: 
+  _id: 3f929c0c-63dc-4405-8f89-5e7fdca88c50
+  _parent: {fileID: 6099446557218457689}
+  _description: "Grze\u015B mo\u017Ce w ko\u0144cu ci\u0119 przepu\u015Bci..."
 --- !u!114 &6026623480776620400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +359,25 @@ MonoBehaviour:
   _tasks:
   - {fileID: -7511881334195876538}
   - {fileID: 4419092273185197041}
+--- !u!114 &6099446557218457689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324b5808905d4a6cb51baa31cfef459d, type: 3}
+  m_Name: Bezglutenowy makowiec
+  m_EditorClassIdentifier: 
+  _id: 93170cbf-e455-4d05-a144-44b1c2d76ce6
+  _description: "Grzesiu jest bardzo g\u0142odny i bardzo uczulony na gluten. Op\u0142at\u0105
+    za przej\u015Bcie most jest obiad dla tego uczulonego zbira."
+  _tasks:
+  - {fileID: 555689847322778881}
+  - {fileID: -8185606666179514259}
+  - {fileID: 5397208108213410124}
 --- !u!114 &7794852598684519398
 MonoBehaviour:
   m_ObjectHideFlags: 0

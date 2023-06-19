@@ -9,10 +9,16 @@ public class Item : ScriptableObject
     new public string name = "New Item";
     public Sprite icon = null;
     public bool isDefaultItem = false;
-
+    public bool death = false;
     public virtual void Use ()
     {
         // Uzywanie itemu 
         Debug.Log("Uzyto itemu");
+        if(death == true)
+        {
+            PlayerController player = GameObject.FindObjectOfType<PlayerController>();
+            player.RestartLevel();
+        }
+
     }
 }
