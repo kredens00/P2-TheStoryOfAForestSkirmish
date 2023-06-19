@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Kropki
+  m_Name: But_znaleziony2
   m_EditorClassIdentifier: 
   nodesList:
-  - {fileID: 6577998268680670515}
+  - {fileID: 1774225349576888384}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
---- !u!114 &6577998268680670515
+--- !u!114 &1774225349576888384
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,15 +32,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 699
-    y: 442
+    x: 716
+    y: 339
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: 
-    text: 
-    characterSprite: {fileID: 0}
+    characterName: Menelaos
+    text: "Ale\u017C ciep\u0142o w gire!"
+    characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 0}

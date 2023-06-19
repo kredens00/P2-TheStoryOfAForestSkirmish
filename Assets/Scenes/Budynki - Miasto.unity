@@ -1264,7 +1264,7 @@ PrefabInstance:
     - target: {fileID: 3152092185784375106, guid: d00e0e9631c77c64c9d3ff3fd311b5aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.697
+      value: -0.39
       objectReference: {fileID: 0}
     - target: {fileID: 3152092185784375106, guid: d00e0e9631c77c64c9d3ff3fd311b5aa,
         type: 3}
@@ -1312,6 +1312,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: fa43d97ce59032d4587129615a4ba80b,
         type: 2}
+    - target: {fileID: 3152092185784375107, guid: d00e0e9631c77c64c9d3ff3fd311b5aa,
+        type: 3}
+      propertyPath: itemID
+      value: mlotek
+      objectReference: {fileID: 0}
     - target: {fileID: 3152092185784375107, guid: d00e0e9631c77c64c9d3ff3fd311b5aa,
         type: 3}
       propertyPath: tasks.m_PersistentCalls.m_Calls.Array.size
@@ -3658,6 +3663,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+--- !u!1 &1213628836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6170974095846479764, guid: 9232f5a489fa3e2478b42d85c84ba1f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1213628835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1218401296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3666,10 +3677,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1213628836}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: graph
       value: 
       objectReference: {fileID: 11400000, guid: 7df15fc4c65cb3c4991ea4537221e4c9,
         type: 2}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: npcID
+      value: menelaos
+      objectReference: {fileID: 0}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: trigger
       value: 
@@ -4532,10 +4551,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1213628836}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: graph
       value: 
       objectReference: {fileID: 11400000, guid: f9f3b44855b23f54a85558350e77670e,
         type: 2}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: npcID
+      value: menelaos2
+      objectReference: {fileID: 0}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: trigger
       value: 
@@ -5887,7 +5914,7 @@ PrefabInstance:
         type: 3}
       propertyPath: swinia_1
       value: 
-      objectReference: {fileID: 1218401297}
+      objectReference: {fileID: 1213628836}
     - target: {fileID: 2719850503206663659, guid: 96c141979c10eb441a78f62088525aef,
         type: 3}
       propertyPath: swinia_2

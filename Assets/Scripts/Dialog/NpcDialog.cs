@@ -51,7 +51,7 @@ public class NpcDialog : MonoBehaviour
         dialogCanvas.SetActive(true);
         if(isTalking)
         {
-            playerController.enabled = false;
+            
             if (collision.gameObject.CompareTag("Player") == true && !isFinished)
             {
                 
@@ -80,7 +80,7 @@ public class NpcDialog : MonoBehaviour
             }
 
         }
-        playerController.enabled = true;
+       
 
 
 
