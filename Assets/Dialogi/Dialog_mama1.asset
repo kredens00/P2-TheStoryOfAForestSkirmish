@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8543584772626208284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -69
+    y: 417
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kapturek
+    text: "Hej Mamo! Wygl\u0105dasz jakby\u015B czego\u015B potrzebowa\u0142a!"
+    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -4036607935774141310}
+--- !u!114 &-4036607935774141310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 121
+    y: 426
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 'Mama '
+    text: "Kapturku, potrzebuj\u0119 pomocy! Kupi\u0142am zepsute jagody i nie mam
+      jak upiec ciasta!"
+    characterSprite: {fileID: 21300000, guid: 48aed5e4b7bc8824189c14f32f3987c0, type: 3}
+  parentNode: {fileID: -8543584772626208284}
+  childNode: {fileID: 6205082212468913508}
+--- !u!114 &-3837756373219903340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 735
+    y: 323
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mama
+    text: "Ko\u0142o babcinego domku rosn\u0105 jagody, kt\xF3re potrzebuj\u0119.
+      Babcia na pewno ju\u017C je zebra\u0142a. Przynie\u015B mi je."
+    characterSprite: {fileID: 21300000, guid: 48aed5e4b7bc8824189c14f32f3987c0, type: 3}
+  parentNode: {fileID: 6897647882262185025}
+  childNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Dialog_mama1
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: -8543584772626208284}
+  - {fileID: -4036607935774141310}
+  - {fileID: 6205082212468913508}
+  - {fileID: -3837756373219903340}
+  - {fileID: 1219623826051905850}
+  - {fileID: 6897647882262185025}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &1219623826051905850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 536
+    y: 477
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mama
+    text: "O ty nicponiu! I tak p\xF3jdziesz do babci, bo nie dostaniesz \u017Carcia
+      do najbli\u017Cszych do\u017Cynek."
+    characterSprite: {fileID: 21300000, guid: 48aed5e4b7bc8824189c14f32f3987c0, type: 3}
+  parentNode: {fileID: 6205082212468913508}
+  childNode: {fileID: 6897647882262185025}
+--- !u!114 &6205082212468913508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 306
+    y: 430
+    width: 190
+    height: 145
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - "Nie pomog\u0119 ci, pal wroty mamu\u015Bka"
+  - "Dobrze, pomog\u0119 ci. Jak dotr\u0119 do babci?"
+  - 
+  - 
+  parentSentenceNode: {fileID: 0}
+  childSentenceNodes:
+  - {fileID: 1219623826051905850}
+  - {fileID: 6897647882262185025}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &6897647882262185025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 519
+    y: 336
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Mama
+    text: "Id\u0105c g\u0142\xF3wn\u0105 \u015Bcie\u017Ck\u0105 w prawo, dojdziesz
+      do mostu, za kt\xF3rym znajduje si\u0119 domek Babci, ale to pewnie ju\u017C
+      wiesz! "
+    characterSprite: {fileID: 21300000, guid: 48aed5e4b7bc8824189c14f32f3987c0, type: 3}
+  parentNode: {fileID: 1219623826051905850}
+  childNode: {fileID: -3837756373219903340}
