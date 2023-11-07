@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using Cinemachine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
+using Unity.Services.Analytics;
 public class jump_death : MonoBehaviour
 {
 
@@ -47,10 +49,20 @@ public class jump_death : MonoBehaviour
         Debug.Log("colliding");
         controller.enabled = false;
         agent.enabled = false;
+        OnFallEvent();
         isDead = true;
         if (isDead == true)
            yield return new WaitForSeconds(3);
         PlayerInstance.Destroy(player);
         SceneManager.LoadScene("Smierc_most");
+    }
+
+    private void OnFallEvent()
+    {
+        Analytics.CustomEvent("BridgeDeath");
+
+        AnalyticsService.Instance.CustomData("BridgeDeath");
+        AnalyticsService.Instance.Flush();
+        Debug.Log("Event sent");
     }
 }
