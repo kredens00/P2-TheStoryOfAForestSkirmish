@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 
     public float walkSpeed;
     public float sprintSpeed;
-    public ParticleSystem dust;
     private RaycastHit hit;
     private NavMeshAgent agent;
     private Animator animator;
@@ -80,7 +79,7 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            CreateDust();
+            
             walkSpeed = sprintSpeed;
             animator.SetBool("Running", true);
         } else
@@ -112,10 +111,5 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene("End_game");
         
         
-    }
-
-    void CreateDust()
-    {
-        dust.Play();
     }
 }
