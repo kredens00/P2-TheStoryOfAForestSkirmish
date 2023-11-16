@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6657127728978326192
+--- !u!114 &-7299498798252807758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,18 +16,18 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 633
-    y: 342
+    x: 438
+    y: 312
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Babcia
-    text: Ooooo...Moja kruszynka idzie po jagooody!!!
+    characterName: Grandma
+    text: Oh... My little girl is coming for some berries!!!
     characterSprite: {fileID: 21300000, guid: ff61e3ca18cf53e4c96f05431b514909, type: 3}
   parentNode: {fileID: 0}
-  childNode: {fileID: 4358313927676503008}
+  childNode: {fileID: 654938366066894709}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,14 +38,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Babcia
+  m_Name: Babcia_en
   m_EditorClassIdentifier: 
   nodesList:
-  - {fileID: -6657127728978326192}
-  - {fileID: 4358313927676503008}
+  - {fileID: -7299498798252807758}
+  - {fileID: 654938366066894709}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
---- !u!114 &4358313927676503008
+--- !u!114 &654938366066894709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,15 +61,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 926
-    y: 347
+    x: 783
+    y: 317
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
-    characterName: Kapturek
-    text: "Babciu! Uwa\u017Caj, za tob\u0105!"
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
-  parentNode: {fileID: -6657127728978326192}
+    characterName: Red Hood
+    text: Grandma! Be careful, behind you!
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7299498798252807758}
   childNode: {fileID: 0}

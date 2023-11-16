@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6563033637084410326
+--- !u!114 &-8504329124314984650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,48 +16,19 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 701
-    y: 391
+    x: -190
+    y: 245
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Menelaos
-    text: "Dzisiaj Niedziela! Wszystko zamkni\u0119te psia ma\u0107! A co by\u015B
-      chcia\u0142a kupi\u0107? "
-    characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
-  parentNode: {fileID: 6660402292928753453}
-  childNode: {fileID: 3529531940026492392}
---- !u!114 &-1287658121934074666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 162
-    y: 368
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 0
-  sentence:
-    characterName: Menelaos
-    text: "Kierowniczko! Kierowniczko! nie masz mo\u017Ce fajeczki co\u015B ten?"
+    characterName: King of the street
+    text: Miss, could you perhaps spare a cigarette?
     characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
   parentNode: {fileID: 0}
-  childNode: {fileID: 6660402292928753453}
---- !u!114 &-465311104092880155
+  childNode: {fileID: 4736763070763794779}
+--- !u!114 &-4700431876466835749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,19 +44,47 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 578
-    y: 271
+    x: 230
+    y: 193
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Menelaos
-    text: "Dzisiaj Niedziela! Wszystko zamkni\u0119te psia ma\u0107! A co by\u015B
-      chcia\u0142a kupi\u0107? "
+    characterName: King of the street
+    text: It's sunday today! Everything is close, dammit! What would you like to
+      buy?
     characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
-  parentNode: {fileID: 6660402292928753453}
-  childNode: {fileID: 3529531940026492392}
+  parentNode: {fileID: 4736763070763794779}
+  childNode: {fileID: -4351354223319941788}
+--- !u!114 &-4351354223319941788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 524
+    y: 131
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Red hood
+    text: I need a hammer, do you know where can I find it?
+    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+  parentNode: {fileID: -4700431876466835749}
+  childNode: {fileID: 8300594898283179214}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,20 +95,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Bezdomny1
+  m_Name: Bezdomny1_en
   m_EditorClassIdentifier: 
   nodesList:
-  - {fileID: -1287658121934074666}
-  - {fileID: 6660402292928753453}
-  - {fileID: -6563033637084410326}
-  - {fileID: 1994704347500620798}
-  - {fileID: 8909344110020357119}
-  - {fileID: 3529531940026492392}
-  - {fileID: 3329368538469736659}
-  - {fileID: -465311104092880155}
+  - {fileID: -8504329124314984650}
+  - {fileID: -4700431876466835749}
+  - {fileID: -4351354223319941788}
+  - {fileID: 5923202080488563073}
+  - {fileID: 3943625545565464357}
+  - {fileID: 6534483276512253180}
+  - {fileID: 8300594898283179214}
+  - {fileID: 4736763070763794779}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
---- !u!114 &1994704347500620798
+--- !u!114 &3943625545565464357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,78 +124,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 974
-    y: 399
+    x: 364
+    y: 341
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Menelaos
-    text: "M\u0142otek? Cekoj chwilke... Mam tutaj swoje towary! Oczywi\u015Bcie
-      znalezione, nie skradzione! Mam tutaj pi\u0119kny okaz m\u0142otka pospolitego.
-      Oddam za buta."
+    characterName: King of the street
+    text: It's sunday today! Everything is close, dammit! What would you like to
+      buy?
     characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
-  parentNode: {fileID: 3529531940026492392}
-  childNode: {fileID: 8909344110020357119}
---- !u!114 &3329368538469736659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 1299
-    y: 402
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 0
-  sentence:
-    characterName: Menelaos
-    text: "No zgubi\u0142em cichobiega, jak chodzi\u0142em po zagajniku. Odmarzn\u0105
-      mi zaraz palce! Znajd\u017A mi go to dostaniesz m\u0142ota."
-    characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
-  parentNode: {fileID: 8909344110020357119}
-  childNode: {fileID: 0}
---- !u!114 &3529531940026492392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 825
-    y: 195
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 0
-  sentence:
-    characterName: kapturek
-    text: "Potrzebuj\u0119 m\u0142otka, wiesz mo\u017Ce gdzie go znajd\u0119?"
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
-  parentNode: {fileID: -465311104092880155}
-  childNode: {fileID: 1994704347500620798}
---- !u!114 &6660402292928753453
+  parentNode: {fileID: 4736763070763794779}
+  childNode: {fileID: -4351354223319941788}
+--- !u!114 &4736763070763794779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,24 +153,24 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 392
-    y: 379
+    x: 45
+    y: 346
     width: 190
     height: 145
   isDragging: 0
   isSelected: 0
   answers:
-  - "Prosz\u0119 pana, gdzie tutaj kupi\u0119 m\u0142otek?"
-  - "Sama bym zakurzy\u0142a, ale pewnie mi tu nie sprzedadz\u0105!"
+  - Sir, where can I buy a hammer around here?
+  - I would smoke cigarette myself, but they probably won't sell it to me!
   - 
   - 
-  parentSentenceNode: {fileID: -1287658121934074666}
+  parentSentenceNode: {fileID: -8504329124314984650}
   childSentenceNodes:
-  - {fileID: -6563033637084410326}
-  - {fileID: -465311104092880155}
+  - {fileID: -4700431876466835749}
+  - {fileID: 3943625545565464357}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &8909344110020357119
+--- !u!114 &5923202080488563073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,15 +186,73 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1153
-    y: 209
+    x: 1007
+    y: 357
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Kapturek
-    text: Za buta? Jakiego cholera buta znowu?!
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
-  parentNode: {fileID: 1994704347500620798}
-  childNode: {fileID: 3329368538469736659}
+    characterName: King of the street
+    text: Well, I lost my sneaker while I was walking in the grove. My toes are about
+      to freeze! Find it for me and you'll get the hammer.
+    characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
+  parentNode: {fileID: 6534483276512253180}
+  childNode: {fileID: 0}
+--- !u!114 &6534483276512253180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 843
+    y: 139
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Red hood
+    text: For a shoe? What the hell kind of shoe?!
+    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+  parentNode: {fileID: 8300594898283179214}
+  childNode: {fileID: 5923202080488563073}
+--- !u!114 &8300594898283179214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 693
+    y: 361
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: King of the street
+    text: A hammer? Hold on a moment... I have my own stuff here! Of course, nothing
+      illegal! I have a fine speciment of a common hammer. I'll trade it for a shoe.
+    characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
+  parentNode: {fileID: -4351354223319941788}
+  childNode: {fileID: 6534483276512253180}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7661567496642332867
+--- !u!114 &-8941054700052054486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,20 +16,49 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 419
-    y: 302
+    x: 755
+    y: 281
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
-    characterName: Herszt
-    text: "Eeee...makowca?! Ten idiota znowu zapomnia\u0142 wzi\u0105\u0107 jedzenia?
-      Cholera jasna..."
+    characterName: Red hood
+    text: I'm not his girlfriend! I live in a house near the forest, I need to get
+      to my grandma.
+    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+  parentNode: {fileID: -2633112805951038834}
+  childNode: {fileID: 4163383217832953527}
+--- !u!114 &-8699222267400093646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 392
+    y: 283
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 1
+  sentence:
+    characterName: Chieftain
+    text: Eeee.... poppy seed cake?! This idiot forgot to take a food again? Damn
+      it...
     characterSprite: {fileID: 21300000, guid: 328e184b9e70a4d4d975990d00f900bd, type: 3}
-  parentNode: {fileID: 834260661800762617}
-  childNode: {fileID: -3925065460571632265}
---- !u!114 &-5020034128588118296
+  parentNode: {fileID: 3451961483949573518}
+  childNode: {fileID: -2633112805951038834}
+--- !u!114 &-2633112805951038834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,49 +74,19 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 859
-    y: 301
+    x: 561
+    y: 283
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
-    characterName: Kapturek
-    text: "Nie jestem jego dziewczyn\u0105! Mieszkam w domku pod lasem, potrzebuj\u0119
-      dosta\u0107 si\u0119 do Babuni."
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
-  parentNode: {fileID: -3925065460571632265}
-  childNode: {fileID: 7791364480328432737}
---- !u!114 &-3925065460571632265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 627
-    y: 305
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 0
-  sentence:
-    characterName: Herszt
-    text: "Zaraz, zaraz, a ty co\u015B za jedna? Tak\u0105 m\u0142od\u0105 sobie
-      Grzesiek znalaz\u0142? Ten debil jeden ugania si\u0119 pewnie za dziopami zamiast
-      pilnowa\u0107 mostu..."
+    characterName: Chieftain
+    text: Wain a minute, what about you? Gregory found himself such a young one?
+      That idiot is chasing after skirts instead of watching the bridge....
     characterSprite: {fileID: 21300000, guid: 328e184b9e70a4d4d975990d00f900bd, type: 3}
-  parentNode: {fileID: -7661567496642332867}
-  childNode: {fileID: -5020034128588118296}
+  parentNode: {fileID: -8699222267400093646}
+  childNode: {fileID: -8941054700052054486}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,17 +97,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Dowodca
+  m_Name: Dowodca_en
   m_EditorClassIdentifier: 
   nodesList:
-  - {fileID: 834260661800762617}
-  - {fileID: -7661567496642332867}
-  - {fileID: -3925065460571632265}
-  - {fileID: -5020034128588118296}
-  - {fileID: 7791364480328432737}
+  - {fileID: 3451961483949573518}
+  - {fileID: -2633112805951038834}
+  - {fileID: -8941054700052054486}
+  - {fileID: 4163383217832953527}
+  - {fileID: -8699222267400093646}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
---- !u!114 &834260661800762617
+--- !u!114 &3451961483949573518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,19 +123,19 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 207
-    y: 299
+    x: 183
+    y: 276
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
-    characterName: Kapturek
-    text: Witam szanownego pana kapitana! Ja po makowiec dla Grzesia
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+    characterName: Red hood
+    text: Hello, dear captain! I'm here for a poppy seed cake for Gregory
+    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
   parentNode: {fileID: 0}
-  childNode: {fileID: -7661567496642332867}
---- !u!114 &7791364480328432737
+  childNode: {fileID: -8699222267400093646}
+--- !u!114 &4163383217832953527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,16 +151,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 836
-    y: 498
+    x: 759
+    y: 453
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
-    characterName: Herszt
-    text: "Aaaaa...znam twoj\u0105 mamusi\u0119, nieraz nocowali\u015Bmy pod namiotem,
-      hehe....Dobra ma\u0142a masz tutaj porcj\u0119 dla Grzesia i zmykaj st\u0105d!"
+    characterName: Chieftain
+    text: Ohhhhh.... I know your mom, we spent the night in a tent more than once,
+      hehehe.... Okay girl, here's a portion for Gregory, get out of here and sey
+      hello to mom from the whole battalion hehehe!
     characterSprite: {fileID: 21300000, guid: 328e184b9e70a4d4d975990d00f900bd, type: 3}
-  parentNode: {fileID: -5020034128588118296}
+  parentNode: {fileID: -8941054700052054486}
   childNode: {fileID: 0}

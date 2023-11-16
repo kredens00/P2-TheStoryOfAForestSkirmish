@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Kropki
+  m_Name: But_znaleziony_en
   m_EditorClassIdentifier: 
   nodesList:
-  - {fileID: 6577998268680670515}
+  - {fileID: 6819246861082947043}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
---- !u!114 &6577998268680670515
+--- !u!114 &6819246861082947043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,15 +32,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 592
-    y: 428
+    x: 760
+    y: 391
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: ..........
-    text: ..........
-    characterSprite: {fileID: 21300000, guid: 43a2e68206058ce4ebbbecdcb7ea43db, type: 3}
+    characterName: King of the street
+    text: Thank you kindly, Miss, for the shoe! I'm giving the hammer into those
+      very young, beutiful hands of yours... *kisses sound*
+    characterSprite: {fileID: 21300000, guid: bdecd719ebb1ca6419c439968eb0d6ee, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 0}
