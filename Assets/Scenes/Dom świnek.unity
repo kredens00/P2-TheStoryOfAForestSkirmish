@@ -1926,6 +1926,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 874211499}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: graph_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 75b1417f64da58e4f88b64ee036df6ff,
+        type: 2}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: dialogCanvas
       value: 
       objectReference: {fileID: 874211500}
@@ -1933,6 +1938,11 @@ PrefabInstance:
       propertyPath: graph_finished
       value: 
       objectReference: {fileID: 11400000, guid: 105b48b7ad11faa4d864657fdd632973,
+        type: 2}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: graph_finished_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 328dfaf3ab42c584782c0bddffa733dc,
         type: 2}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: tasks.m_PersistentCalls.m_Calls.Array.size
@@ -3266,6 +3276,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1924056955}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: graph_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 81273d40478f8df4391f0d97c0cc8ab6,
+        type: 2}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: dialogCanvas
       value: 
       objectReference: {fileID: 1924056953}
@@ -3273,6 +3288,11 @@ PrefabInstance:
       propertyPath: graph_finished
       value: 
       objectReference: {fileID: 11400000, guid: 72a2def96c2905d4e991b5020721f8e2,
+        type: 2}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: graph_finished_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 620ce9fa2d1fbe6429d50cc506964ec3,
         type: 2}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: tasks.m_PersistentCalls.m_Calls.Array.size
@@ -5390,6 +5410,11 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 560470677}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: graph_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 28ac9fb143b38cb469bd799984f37d3c,
+        type: 2}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: dialogCanvas
       value: 

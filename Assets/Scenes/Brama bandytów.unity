@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1299,6 +1299,12 @@ PrefabInstance:
       objectReference: {fileID: 412023291}
     - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
         type: 3}
+      propertyPath: graph_en
+      value: 
+      objectReference: {fileID: 11400000, guid: c13eb9300984c0c408f69a09d020f73b,
+        type: 2}
+    - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
+        type: 3}
       propertyPath: dialogCanvas
       value: 
       objectReference: {fileID: 412023290}
@@ -1307,6 +1313,12 @@ PrefabInstance:
       propertyPath: graph_finished
       value: 
       objectReference: {fileID: 11400000, guid: 1e2d026ad2408ed41918613916dd8f7b,
+        type: 2}
+    - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
+        type: 3}
+      propertyPath: graph_finished_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d808f06541b7bb48ac4857b06b80f3a,
         type: 2}
     - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
         type: 3}
@@ -2319,6 +2331,12 @@ PrefabInstance:
       objectReference: {fileID: 253771590}
     - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
         type: 3}
+      propertyPath: graph_en
+      value: 
+      objectReference: {fileID: 11400000, guid: c13eb9300984c0c408f69a09d020f73b,
+        type: 2}
+    - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
+        type: 3}
       propertyPath: dialogCanvas
       value: 
       objectReference: {fileID: 253771589}
@@ -2327,6 +2345,12 @@ PrefabInstance:
       propertyPath: graph_finished
       value: 
       objectReference: {fileID: 11400000, guid: 1e2d026ad2408ed41918613916dd8f7b,
+        type: 2}
+    - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
+        type: 3}
+      propertyPath: graph_finished_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d808f06541b7bb48ac4857b06b80f3a,
         type: 2}
     - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
         type: 3}
@@ -4112,6 +4136,12 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 1160959680}
+    - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
+        type: 3}
+      propertyPath: graph_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 28ac9fb143b38cb469bd799984f37d3c,
+        type: 2}
     - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
         type: 3}
       propertyPath: dialogCanvas
