@@ -27,23 +27,10 @@ public class Menu_hide : MonoBehaviour
 
     public bool langIsSet = false;
     public bool agrIsSet = false;
-    public GameObject langWindow;
-    public GameObject agrWindow;
-    public GameObject mainWindow;
+   
 
     // Start is called before the first frame update
-    void Start()
-    {
-        if (langIsSet) 
-        {
-            langWindow.SetActive(false);
-        }
-        if (agrIsSet)
-        {
-            agrWindow.SetActive(false);
-            mainWindow.SetActive(true);
-        }
-    }
+   
 
     // Update is called once per frame
     public void ChangeLangBool()
