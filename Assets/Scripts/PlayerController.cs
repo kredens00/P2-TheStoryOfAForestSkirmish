@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     
     bool isSprinting;
 
-
+    public ParticleSystem particleSystem;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -27,7 +27,14 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        
+         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            if (!particleSystem.isPlaying)
+            {
+                particleSystem.Play();
+            }
+        }
+
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
