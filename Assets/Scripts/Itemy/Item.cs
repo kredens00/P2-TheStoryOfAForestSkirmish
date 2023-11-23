@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [CreateAssetMenu(fileName = "New Item", menuName = " Inventory/Item")]
 public class Item : ScriptableObject
@@ -10,8 +12,12 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public bool isDefaultItem = false;
     public bool death = false;
-    public virtual void Use ()
+    public bool hallucinations = false;
+    
+ 
+    public virtual void Use()
     {
+
         // Uzywanie itemu 
         Debug.Log("Uzyto itemu");
         if(death == true)
@@ -20,5 +26,11 @@ public class Item : ScriptableObject
             player.RestartLevel();
         }
 
+     
+        
     }
+
+    
+
+
 }

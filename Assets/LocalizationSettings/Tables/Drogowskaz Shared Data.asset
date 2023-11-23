@@ -10,36 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: StringCollection Shared Data
+  m_Name: Drogowskaz Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: StringCollection
-  m_TableCollectionNameGuidString: f67f51e8c696c05459ec033826178d8e
-  m_Entries:
-  - m_Id: 23373520896
-    m_Key: TitleGame
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12717333489696768
-    m_Key: drogowskaz1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12717911301210112
-    m_Key: drogowskaz2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12718100640481280
-    m_Key: drogowskaz3
-    m_Metadata:
-      m_Items: []
+  m_TableCollectionName: Drogowskaz
+  m_TableCollectionNameGuidString: 00000000000000000000000000000000
+  m_Entries: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 6330744309007515648
+    rid: 3205525535309955076
   references:
     version: 2
     RefIds:
-    - rid: 6330744309007515648
+    - rid: 3205525535309955076
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
         asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1697740430636
+        m_CustomEpoch: 1700772288759

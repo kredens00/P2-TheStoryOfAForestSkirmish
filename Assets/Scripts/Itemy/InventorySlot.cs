@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using UnityEngine.Rendering;
 
 public class InventorySlot : MonoBehaviour
 {
@@ -33,6 +35,19 @@ public class InventorySlot : MonoBehaviour
         if (item != null)
         {
             item.Use();
+            if(item.hallucinations == true)
+            {
+                StartCoroutine(Hallucinations());
+            }
         }
+    }
+
+    public IEnumerator Hallucinations()
+    {
+        Volume volume = GameObject.FindObjectOfType<Volume>();
+        volume.enabled = true;
+        yield return new WaitForSeconds(15);
+        volume.enabled=false;
+
     }
 }

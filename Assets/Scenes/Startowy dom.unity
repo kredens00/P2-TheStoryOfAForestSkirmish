@@ -4707,6 +4707,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1736218224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1760097696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 533835975061244350, guid: 72ec5bf5c23e907449fb12c5bfdfd6d8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2025967141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1760097699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760097696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f14fdd88299314bbc8a6da6109a8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1769366105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5294,11 +5312,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'Postprocess po zjedzeniu grzyba '
-      objectReference: {fileID: 0}
-    - target: {fileID: 533835975061244350, guid: 72ec5bf5c23e907449fb12c5bfdfd6d8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ec5bf5c23e907449fb12c5bfdfd6d8, type: 3}
@@ -7592,7 +7605,7 @@ PrefabInstance:
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.27532843
+      value: 0.27534226
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
