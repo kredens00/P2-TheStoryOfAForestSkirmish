@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a72c566f809eb34ebea6269f555f090
+guid: 917aecade3fb4e749a0a72f441c1571f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,169 +105,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ognisko_loop
+      name: spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4164
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f29385281472dc42bcb323ed27975aa
+      internalID: 706940496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 4164
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4231cc39f4ef776478a2c3687340f260
+      internalID: -1565887281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 4164
+        y: 4164
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406fa64c196513b4f9cf7c6fcb99ac0c
+      internalID: 304680410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 6246
+        y: 4164
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428cd55bb562972479f5e81b34b6a685
+      internalID: 586240007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2082
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d07cb35447e904980d7e33a7584d9d
+      internalID: -629239788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 2082
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959201e7bbdd4ef4c8e4f23dd2ca0f83
+      internalID: -983393521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 4164
+        y: 2082
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a954d9d2d205c9e40ac4f7245e9ca36c
+      internalID: -1163634478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 6246
+        y: 2082
+        width: 2082
+        height: 2082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eec0812ec42464458053f121d46338f
+      internalID: 1209451550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 18
-        height: 24
+        width: 2082
+        height: 2082
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7b6f90a29bb1ca4b95e6adeedb7d066
-      internalID: 1039076634
+      spriteID: 0b7cfbef9e2044e45b73ef8fe0711708
+      internalID: -2047975746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_1
+      name: spritesheet_9
       rect:
         serializedVersion: 2
-        x: 20
+        x: 2082
         y: 0
-        width: 18
-        height: 24
+        width: 2082
+        height: 2082
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 830bf27e39633fd4f82bbba43054b7d8
-      internalID: -586644797
+      spriteID: 0a212fb44fa620643b25b0c231af70a6
+      internalID: -1046984552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_2
+      name: spritesheet_10
       rect:
         serializedVersion: 2
-        x: 40
+        x: 4164
         y: 0
-        width: 18
-        height: 24
+        width: 2082
+        height: 2082
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3092595515c26094b9fd77589002c658
-      internalID: -1546256344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: burning_loop_2_3
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 0
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40908c8c9aab5f142b0c301e7bcc9a15
-      internalID: 927397496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: burning_loop_2_4
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2fe0f0533e95a3459ad0dfc9e565aba
-      internalID: -87918516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: burning_loop_2_5
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ba4f9c96e427584481ac616fc8b51ae
-      internalID: -1611670263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: burning_loop_2_6
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c798342200a4a44eab76e709a3212cf
-      internalID: 1201580778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: burning_loop_2_7
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 0
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2080106ca9d2b545815123a2a8ff34b
-      internalID: -1779617812
+      spriteID: 48f54139e3d960347a9c3c8c8517f341
+      internalID: -1062627911
       vertices: []
       indices: 
       edges: []
@@ -275,7 +338,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 85b81ca8f3460cb4a8bd7eca33da1e53
+    spriteID: 50f66dbb565f4824a9e5ffa063744827
     internalID: 0
     vertices: []
     indices: 
@@ -283,14 +346,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      burning_loop_2_6: 1201580778
-      burning_loop_2_2: -1546256344
-      burning_loop_2_4: -87918516
-      ognisko_loop: 1039076634
-      burning_loop_2_3: 927397496
-      burning_loop_2_1: -586644797
-      burning_loop_2_5: -1611670263
-      burning_loop_2_7: -1779617812
+      spritesheet_5: -983393521
+      spritesheet_2: 304680410
+      spritesheet_8: -2047975746
+      spritesheet_3: 586240007
+      spritesheet_4: -629239788
+      spritesheet_0: 706940496
+      spritesheet_1: -1565887281
+      spritesheet_6: -1163634478
+      spritesheet_9: -1046984552
+      spritesheet_7: 1209451550
+      spritesheet_10: -1062627911
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
