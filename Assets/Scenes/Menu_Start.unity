@@ -2061,7 +2061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2000842291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2158,7 +2158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startButton: {fileID: 1662194192}
   exitButton: {fileID: 703879249}
-  settingsButton: {fileID: 0}
+  settingsButton: {fileID: 1051697904}
   settingsCanvas: {fileID: 0}
   startCanvas: {fileID: 0}
 --- !u!114 &2000842296
@@ -2214,7 +2214,7 @@ PrefabInstance:
     - target: {fileID: 3739474815313739842, guid: 7f4909c13ec095242baaaad4efc7ec75,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3739474815313739846, guid: 7f4909c13ec095242baaaad4efc7ec75,
         type: 3}
