@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.UI;
 
 public class ItemPickup : Interactable
 {
@@ -31,10 +32,12 @@ public class ItemPickup : Interactable
       bool wasPickedUp =  Inventory.Instance.Add(item);
         if (wasPickedUp)
         {
+            
             tasks.Invoke();
             SavePickedUpItem();
             Destroy(gameObject);
-            
+           
+            StartCoroutine(PickUpUi());
         }
 
     }
@@ -48,5 +51,27 @@ public class ItemPickup : Interactable
         }
        
         
+    }
+
+    public IEnumerator PickUpUi()
+    {
+        GameObject pickupUi = GameObject.FindGameObjectWithTag("PickupMenu");
+        
+        
+        TextMeshProUGUI textUi = pickupUi.GetComponentInChildren<TextMeshProUGUI>();
+        
+        
+        textUi.enabled= true;
+        textUi.text += item.name;
+
+        pickupUi.GetComponent<Image>().enabled = true;
+
+        yield return new WaitForSeconds(1);
+
+        textUi.text = "";
+        pickupUi.GetComponent<Image>().enabled = false;
+        textUi.enabled = false;
+
+
     }
 }
