@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -38,6 +40,7 @@ public class ItemPickup : Interactable
             Destroy(gameObject);
            
             StartCoroutine(PickUpUi());
+            
         }
 
     }
@@ -66,12 +69,36 @@ public class ItemPickup : Interactable
 
         pickupUi.GetComponent<Image>().enabled = true;
 
+        yield return null;
+        Debug.Log("1 sekunda");
+        
+        
+
+       /* GameObject pickupUi1 = GameObject.FindGameObjectWithTag("PickupMenu");
+        pickupUi1.SetActive(false);
+
+        TextMeshProUGUI textUi1 = pickupUi1.GetComponentInChildren<TextMeshProUGUI>();
+
+        textUi1.text = "";
+        pickupUi1.GetComponent<Image>().enabled = false;
+        textUi1.enabled = false;
+        yield return null;*/
+        
+        
+        
+
+    }
+    public IEnumerator CloseUi()
+    {
         yield return new WaitForSeconds(1);
+        GameObject pickupUi1 = GameObject.FindGameObjectWithTag("PickupMenu");
+        
+        TextMeshProUGUI textUi1 = pickupUi1.GetComponentInChildren<TextMeshProUGUI>();
 
-        textUi.text = "";
-        pickupUi.GetComponent<Image>().enabled = false;
-        textUi.enabled = false;
-
-
+        textUi1.text = "Podniesiono: ";
+        pickupUi1.GetComponent<Image>().enabled = false;
+        textUi1.enabled = false;
+        
+        
     }
 }
