@@ -768,6 +768,7 @@ GameObject:
   - component: {fileID: 315359199}
   - component: {fileID: 315359201}
   - component: {fileID: 315359200}
+  - component: {fileID: 315359202}
   m_Layer: 0
   m_Name: Babcia
   m_TagString: Untagged
@@ -816,12 +817,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 21
-  m_Sprite: {fileID: 21300000, guid: ff61e3ca18cf53e4c96f05431b514909, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54ad0d4be09a4dc448bdb17f6c855fb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
-  m_DrawMode: 1
-  m_Size: {x: 6, y: 6}
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 6.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -835,8 +836,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315359196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.29, y: 1.26, z: -6.42}
-  m_LocalScale: {x: 0.44461203, y: 0.44461203, z: 0.444612}
+  m_LocalPosition: {x: -2.263, y: 0.881, z: -6.1}
+  m_LocalScale: {x: 0.30804083, y: 0.30804083, z: 0.30804083}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -853,7 +854,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c40c5293dde8eb44d82c277d5e1ae993, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -871,10 +872,10 @@ BoxCollider:
   m_GameObject: {fileID: 315359196}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 10.375835, y: 6, z: 9.674586}
-  m_Center: {x: 2.1879144, y: 0, z: 1.858855}
+  m_Size: {x: 10.39, y: 4.2, z: 5.37}
+  m_Center: {x: 2.1879144, y: -0.24, z: 1}
 --- !u!114 &315359201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,6 +899,25 @@ MonoBehaviour:
   dialogCanvas: {fileID: 980179883}
   npcID: 
   npc: {fileID: 0}
+--- !u!320 &315359202
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315359196}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 7b2ea837ce9686047b06379664fd5866, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 10
+  m_SceneBindings:
+  - key: {fileID: -3510144469461204955, guid: 7b2ea837ce9686047b06379664fd5866, type: 2}
+    value: {fileID: 315359199}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &321332959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4193,7 +4213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487487836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.44, y: 1.72, z: -6.682}
+  m_LocalPosition: {x: -7.09, y: 1.72, z: -6.682}
   m_LocalScale: {x: 0.47934392, y: 0.47934392, z: 0.47934392}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4210,13 +4230,11 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: e8ebceb313436e64293ed1aa28bda362, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 6472934135031989550, guid: e8ebceb313436e64293ed1aa28bda362, type: 2}
-    value: {fileID: 315359199}
   - key: {fileID: 157585153891226888, guid: e8ebceb313436e64293ed1aa28bda362, type: 2}
     value: {fileID: 1487487837}
   m_ExposedReferences:
@@ -4441,7 +4459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557954386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.77, y: 0.64, z: -5.67}
+  m_LocalPosition: {x: 0.17, y: 0.64, z: -5.67}
   m_LocalScale: {x: 1, y: 1, z: 4.242}
   m_ConstrainProportionsScale: 0
   m_Children: []
