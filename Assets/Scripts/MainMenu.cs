@@ -27,6 +27,7 @@ public class MainMenu : MonoBehaviour
 
     void LoadScene()
     {
+        PlayerPrefs.DeleteAll();
         // Kod do wykonania po kliknięciu przycisku Start
         Debug.Log("Ładowanie sceny...");
         // Tutaj można dodać kod, który ma zostać wykonany przed załadowaniem nowej sceny

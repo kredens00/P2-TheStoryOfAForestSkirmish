@@ -835,7 +835,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315359196}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.263, y: 0.881, z: -6.1}
   m_LocalScale: {x: 0.30804083, y: 0.30804083, z: 0.30804083}
   m_ConstrainProportionsScale: 0
@@ -871,11 +871,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315359196}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.39, y: 4.2, z: 5.37}
-  m_Center: {x: 2.1879144, y: -0.24, z: 1}
+  m_Center: {x: 4.91, y: -0.24, z: 1}
 --- !u!114 &315359201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,7 +912,7 @@ PlayableDirector:
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_InitialTime: 10
+  m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -3510144469461204955, guid: 7b2ea837ce9686047b06379664fd5866, type: 2}
     value: {fileID: 315359199}
@@ -4451,6 +4451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playableDirector: {fileID: 1487487840}
+  playableDirector1: {fileID: 315359202}
 --- !u!4 &1557954389
 Transform:
   m_ObjectHideFlags: 0
@@ -4459,7 +4460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557954386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17, y: 0.64, z: -5.67}
+  m_LocalPosition: {x: -0.69, y: 0.64, z: -5.67}
   m_LocalScale: {x: 1, y: 1, z: 4.242}
   m_ConstrainProportionsScale: 0
   m_Children: []
