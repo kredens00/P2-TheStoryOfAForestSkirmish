@@ -5593,14 +5593,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0a53d479c97625a459cc2b6cd5d0b330, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7998,17 +7998,17 @@ PrefabInstance:
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.27535823
+      value: 0.288991
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1495385
+      value: 3.0553207
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.3837433
+      value: -3.4133773
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
@@ -8063,7 +8063,7 @@ PrefabInstance:
     - target: {fileID: 6660527686460749927, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: orthographic size
-      value: 5.69
+      value: 5.1
       objectReference: {fileID: 0}
     - target: {fileID: 7087092876087234769, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
@@ -8078,7 +8078,7 @@ PrefabInstance:
     - target: {fileID: 7087092876087234769, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 5.69
+      value: 5.1
       objectReference: {fileID: 0}
     - target: {fileID: 7604831034505793578, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
@@ -8153,17 +8153,17 @@ PrefabInstance:
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.27535823
+      value: 0.288991
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1495385
+      value: 3.0553207
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.3837433
+      value: -3.4133773
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
