@@ -54,8 +54,15 @@ public class Inventory : MonoBehaviour
 
     public void Remove(Item item)
     {
-        items.Remove(item);
-        if (onItemChangedCallback != null)
-            onItemChangedCallback.Invoke();
+        if(item.isDefaultItem)
+        {
+            Debug.Log("nie mozna usunac itemu questowego!");
+        }else
+        {
+            items.Remove(item);
+            if(onItemChangedCallback != null)
+                onItemChangedCallback.Invoke();
+        }
+        
     }
 }

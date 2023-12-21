@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class ItemPickup : Interactable
@@ -14,7 +15,7 @@ public class ItemPickup : Interactable
     public UnityEvent tasks;
     public Item item;
     public string itemID;
-
+   
     private void Start()
     {
         if (PlayerPrefs.HasKey(itemID))
@@ -63,7 +64,11 @@ public class ItemPickup : Interactable
         
         TextMeshProUGUI textUi = pickupUi.GetComponentInChildren<TextMeshProUGUI>();
         
-        
+       
+      if (PlayerPrefs.GetInt("LocaleKey") == 1)
+        {
+            item.name = item.en_name;
+        }
         textUi.enabled= true;
         textUi.text += item.name;
 
