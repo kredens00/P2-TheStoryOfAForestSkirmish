@@ -4,6 +4,7 @@ using Unity.Services.Analytics;
 
 public class Analitics : MonoBehaviour
 {
+    
     async void Start()
     {
         await UnityServices.InitializeAsync();
