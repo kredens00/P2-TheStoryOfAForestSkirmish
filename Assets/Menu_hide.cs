@@ -27,6 +27,7 @@ public class Menu_hide : MonoBehaviour
 
     public bool langIsSet = false;
     public bool agrIsSet = false;
+    public bool isConsent = false;
    
 
     // Start is called before the first frame update
@@ -41,5 +42,10 @@ public class Menu_hide : MonoBehaviour
     public void ChangeAgrBool()
     {
         agrIsSet= true;
+    }
+
+    public void Consent()
+    {
+        isConsent = true;
     }
 }

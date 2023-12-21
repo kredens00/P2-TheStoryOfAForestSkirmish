@@ -8,10 +8,15 @@ using UnityEngine.Analytics;
 public class Analytics_mission : MonoBehaviour
 {
     public string questId;
+    public Menu_hide consent;
     // Start is called before the first frame update
+    void Start()
+    {
+        consent = GameObject.Find("Menu_hide").GetComponent<Menu_hide>();
+    }
     public void OnMissionCompleted()
     {
-     if(AnalyticsService.Instance !=null)
+     if(consent.isConsent == true)
         {
             Dictionary<string, object> data = new Dictionary<string, object>()
         {
