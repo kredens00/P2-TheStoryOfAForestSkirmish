@@ -16,10 +16,6 @@ public class DisableScroll : MonoBehaviour
         {
             // Ustaw czułość scrollowania na 0, co praktycznie wyłączy scrollowanie
             scrollRect.scrollSensitivity = 0f;
-
-            // Wyłącz możliwość przenoszenia obiektu
-            scrollRect.horizontal = false;
-            scrollRect.vertical = false;
         }
         else
         {
