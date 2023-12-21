@@ -3476,6 +3476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7461305831211121366, guid: f3226b8e9c0e17548b9035199b52c25d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7526747313712293280, guid: f3226b8e9c0e17548b9035199b52c25d,
         type: 3}
       propertyPath: m_Enabled
@@ -4930,6 +4935,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2074997585}
     m_Modifications:
+    - target: {fileID: 1957075241, guid: 77e48bd989066064ea4376c500bf4058, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957075242, guid: 77e48bd989066064ea4376c500bf4058, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2958857490526902345, guid: 77e48bd989066064ea4376c500bf4058,
         type: 3}
       propertyPath: m_Pivot.x
@@ -8076,7 +8089,7 @@ PrefabInstance:
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2888633
+      value: 0.28887957
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}

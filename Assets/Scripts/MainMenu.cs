@@ -33,7 +33,7 @@ public class MainMenu : MonoBehaviour
         // Tutaj można dodać kod, który ma zostać wykonany przed załadowaniem nowej sceny
 
         // Wczytanie nowej sceny o nazwie "NazwaSceny" (zastąpić własną nazwą)
-        SceneManager.LoadScene("Startowy dom");
+        SceneManager.LoadScene("IntroScena0");
     }
 
     void ExitGame()
