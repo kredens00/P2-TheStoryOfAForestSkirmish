@@ -32,6 +32,7 @@ public class Inventory : MonoBehaviour
     public int space = 5;
 
     public List<Item> items = new List<Item>();
+    RemoveQuestItem remItem;
 
     public bool Add(Item item)
     {
@@ -54,9 +55,9 @@ public class Inventory : MonoBehaviour
 
     public void Remove(Item item)
     {
-        if(item.isDefaultItem)
+        if(item.questItem && remItem == false)
         {
-            Debug.Log("nie mozna usunac itemu questowego!");
+            Debug.Log("Quest item cannot be removed");
         }else
         {
             items.Remove(item);

@@ -12,6 +12,7 @@ public class Item : ScriptableObject
     public string en_name = "New Item_en";
     public Sprite icon = null;
     public bool isDefaultItem = false;
+    public bool questItem = false;
     public bool death = false;
     public bool hallucinations = false;
     
