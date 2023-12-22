@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 633
-    y: 342
+    x: 61
+    y: 225
     width: 170
     height: 115
   isDragging: 0
@@ -25,9 +25,67 @@ MonoBehaviour:
   sentence:
     characterName: Babcia
     text: Ooooo...Moja kruszynka idzie po jagooody!!!
-    characterSprite: {fileID: 21300000, guid: ff61e3ca18cf53e4c96f05431b514909, type: 3}
+    characterSprite: {fileID: 21300000, guid: 709651d5bd64d4b46b583dd93270be46, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 4358313927676503008}
+--- !u!114 &-4079286219079294508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 587
+    y: 241
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Babcia
+    text: "Przygotowa\u0142am ju\u017C dla ciebie ca\u0142\u0105 paczuszk\u0119.
+      Mamusia na pewno si\u0119 ucieszy s\u0142o\u0144ce.. "
+    characterSprite: {fileID: 21300000, guid: 709651d5bd64d4b46b583dd93270be46, type: 3}
+  parentNode: {fileID: 4358313927676503008}
+  childNode: {fileID: -2431912565560747120}
+--- !u!114 &-2431912565560747120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 787
+    y: 266
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Babcia
+    text: "Chod\u017A dziecko na gor\u0105c\u0105 herbat\u0119, na pewno si\u0119
+      nam\u0119czy\u0142a\u015B...."
+    characterSprite: {fileID: 21300000, guid: 709651d5bd64d4b46b583dd93270be46, type: 3}
+  parentNode: {fileID: 1575079137282806961}
+  childNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,8 +101,39 @@ MonoBehaviour:
   nodesList:
   - {fileID: -6657127728978326192}
   - {fileID: 4358313927676503008}
+  - {fileID: -4079286219079294508}
+  - {fileID: 1575079137282806961}
+  - {fileID: -2431912565560747120}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
+--- !u!114 &1575079137282806961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 922
+    y: 414
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kapturek
+    text: "Babciu! Uwa\u017Caj, za tob\u0105!"
+    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -2431912565560747120}
 --- !u!114 &4358313927676503008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,15 +150,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 926
-    y: 347
+    x: 347
+    y: 235
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Kapturek
-    text: "Babciu! Uwa\u017Caj, za tob\u0105!"
+    text: "Witaj babciu! Nawet nie wiesz jak ciezko by\u0142o tutaj trafi\u0107!
+      Potrzebuje jag\xF3d dla mamy..."
     characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
   parentNode: {fileID: -6657127728978326192}
-  childNode: {fileID: 0}
+  childNode: {fileID: -4079286219079294508}
