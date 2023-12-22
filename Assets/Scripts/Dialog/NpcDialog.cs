@@ -53,7 +53,7 @@ public class NpcDialog : MonoBehaviour
         
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
         PlayerController playerController = GameObject.FindObjectOfType<PlayerController>();
         
@@ -64,7 +64,7 @@ public class NpcDialog : MonoBehaviour
         {
             
 
-            if (collision.gameObject.CompareTag("Player") == true && !isFinished)
+            if (other.gameObject.CompareTag("Player") == true && !isFinished)
             {
                 if (npcID != "")
                 {
@@ -121,9 +121,9 @@ public class NpcDialog : MonoBehaviour
     } 
     
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if(collision.gameObject.CompareTag("Player") == true)
+        if(other.gameObject.CompareTag("Player") == true)
         {
             isTalking = false;
             dialogCanvas.SetActive(false);

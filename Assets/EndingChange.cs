@@ -15,7 +15,19 @@ public class EndingChange : MonoBehaviour
     private bool fadingIn = true;
     private bool displayingImage = false;
     private bool fadingOut = false;
+    GameObject _player;
+    GameObject inventory;
 
+
+    void Awake()
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
+        Destroy(_player);
+        inventory = GameObject.Find("GameManager");
+        Destroy(inventory);
+
+        
+    }
     void Start()
     {
         StartCoroutine(FadeInOut());

@@ -24,7 +24,7 @@ public class Ending : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("BadEnding1");
+            SceneManager.LoadScene("BadEnding");
         }
     }
 }

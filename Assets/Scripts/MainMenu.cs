@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
     public Button settingsButton;
     public GameObject settingsCanvas;
     public GameObject startCanvas;
+    public GameObject playerInstance;
+    GameObject inventory;
     void Start()
     {
         // Przypisanie funkcji do przycisków
@@ -28,6 +30,11 @@ public class MainMenu : MonoBehaviour
     void LoadScene()
     {
         PlayerPrefs.DeleteAll();
+        playerInstance = GameObject.FindGameObjectWithTag("Player");
+        Destroy(playerInstance);
+        inventory = GameObject.Find("GameManager");
+        Destroy(inventory);
+
         // Kod do wykonania po kliknięciu przycisku Start
         Debug.Log("Ładowanie sceny...");
         // Tutaj można dodać kod, który ma zostać wykonany przed załadowaniem nowej sceny
