@@ -16,8 +16,8 @@ public class Analytics_mission : MonoBehaviour
     }
     public void OnMissionCompleted()
     {
-     if(consent.isConsent == true)
-        {
+    
+        
             Dictionary<string, object> data = new Dictionary<string, object>()
         {
             {"questName", $"{questId}" }
@@ -27,7 +27,7 @@ public class Analytics_mission : MonoBehaviour
             AnalyticsService.Instance.CustomData("missionCompleted", data);
             AnalyticsService.Instance.Flush();
             Debug.Log("Event sent");
-        }
+        
         //Analytics.CustomEvent("missionCompleted");
   
         

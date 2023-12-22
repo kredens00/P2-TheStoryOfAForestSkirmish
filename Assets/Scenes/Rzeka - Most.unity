@@ -1007,7 +1007,7 @@ PrefabInstance:
         type: 3}
       propertyPath: graph
       value: 
-      objectReference: {fileID: 11400000, guid: 1f6d7790a1e980c4ca44d122244749af,
+      objectReference: {fileID: 11400000, guid: 4ce354e28c7438f4d8d2762461c4a0b5,
         type: 2}
     - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
         type: 3}
@@ -1019,6 +1019,12 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 1250162784}
+    - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
+        type: 3}
+      propertyPath: graph_en
+      value: 
+      objectReference: {fileID: 11400000, guid: 4ce354e28c7438f4d8d2762461c4a0b5,
+        type: 2}
     - target: {fileID: 3616105145699125651, guid: 7e51550ffa1559449a49b4cb9b37202c,
         type: 3}
       propertyPath: dialogCanvas
