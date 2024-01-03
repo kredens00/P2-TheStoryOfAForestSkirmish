@@ -29,7 +29,7 @@ public class NpcDialog : MonoBehaviour
     public UnityEvent tasks;
 
     private bool isTalking;
-    private bool isFinished;
+    private bool isFinished = false;
     public GameObject dialogCanvas;
     public string npcID;
     public GameObject npc;

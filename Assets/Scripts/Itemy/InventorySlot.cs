@@ -29,7 +29,14 @@ public class InventorySlot : MonoBehaviour
 
     public void OnRemoveButton()
     {
-        Inventory.Instance.Remove(item);
+        if(item.questItem)
+        {
+            Debug.Log("quest item cannot be removed");
+        } else
+        {
+            Inventory.Instance.Remove(item);
+        }
+        
     }
 
     public void UseItem ()

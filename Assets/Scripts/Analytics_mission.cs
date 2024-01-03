@@ -5,14 +5,15 @@ using UnityEngine;
 using UnityEngine.Analytics;
 
 
+
 public class Analytics_mission : MonoBehaviour
 {
     public string questId;
-    public Menu_hide consent;
+    //public Menu_hide consent;
     // Start is called before the first frame update
     void Start()
     {
-        consent = GameObject.Find("Menu_hide").GetComponent<Menu_hide>();
+       //consent = GameObject.Find("Menu_hide").GetComponent<Menu_hide>();
     }
     public void OnMissionCompleted()
     {
@@ -24,9 +25,16 @@ public class Analytics_mission : MonoBehaviour
 
 
         };
-            AnalyticsService.Instance.CustomData("missionCompleted", data);
-            AnalyticsService.Instance.Flush();
+        if(AnalyticsService.Instance!= null)
+        {
+            AnalyticsService.Instance?.CustomData("missionCompleted", data);
+            AnalyticsService.Instance?.Flush();
             Debug.Log("Event sent");
+        } else
+        {
+            Debug.Log("Analytics not initialized");
+        }
+            
         
         //Analytics.CustomEvent("missionCompleted");
   

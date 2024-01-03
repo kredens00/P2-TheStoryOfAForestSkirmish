@@ -21,18 +21,18 @@ public class QuestUpdater : MonoBehaviour
 
     public void NextTask()
     {
-       _questInstance.Next();
+       _questInstance?.Next();
        
 
         // Prints the current task name
-        Debug.Log(_questInstance.Status);
-        Debug.Log(_questInstance.ActiveTask.Title);
+        Debug.Log(_questInstance?.Status);
+        Debug.Log(_questInstance?.ActiveTask.Title);
     }
 
     public void CompleteTask()
     {
-        _questInstance.Complete();
-        Debug.Log(_questInstance.Status);
+        _questInstance?.Complete();
+        Debug.Log(_questInstance?.Status);
         
     }
 
