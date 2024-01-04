@@ -1057,6 +1057,12 @@ Transform:
   m_Father: {fileID: 981225487}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &663956846 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5446926713131867828, guid: f5467e143f53a234ea2cc0a1de74a457,
+    type: 3}
+  m_PrefabInstance: {fileID: 5446926714916958525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &684776876
 GameObject:
   m_ObjectHideFlags: 0
@@ -8024,7 +8030,7 @@ PrefabInstance:
     - target: {fileID: 623403716, guid: ce228c6b723eaa044a93f9e0d5ab2321, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 663956846}
     - target: {fileID: 623403716, guid: ce228c6b723eaa044a93f9e0d5ab2321, type: 3}
       propertyPath: m_ConfineScreenEdges
       value: 0
@@ -8142,12 +8148,12 @@ PrefabInstance:
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.28900084
+      value: 3.0173557
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0553207
+      value: 2.9564247
       objectReference: {fileID: 0}
     - target: {fileID: 1007582220595032812, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
@@ -8297,7 +8303,7 @@ PrefabInstance:
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.28900084
+      value: 0.28891885
       objectReference: {fileID: 0}
     - target: {fileID: 8701485880583253750, guid: ce228c6b723eaa044a93f9e0d5ab2321,
         type: 3}
