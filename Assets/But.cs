@@ -20,12 +20,18 @@ public class But : MonoBehaviour
        
         if(_inventory.items.Contains(item))
         {
-           
-            swinia_1?.SetActive(false);
-            if(swinia_2 != null)
+           if(swinia_1 !=null) 
+            
             {
-                swinia_2.SetActive(true);
+
+                swinia_1?.SetActive(false);
+                if (swinia_2 != null)
+                {
+                    swinia_2.SetActive(true);
+                }
+
             }
+           
             
         }
     }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Unity.Services.Analytics;
+using Unity.Services.Core;
 using UnityEngine;
 using UnityEngine.Analytics;
 
@@ -25,7 +26,7 @@ public class Analytics_mission : MonoBehaviour
 
 
         };
-        if(AnalyticsService.Instance!= null)
+        if(UnityServices.State == ServicesInitializationState.Initialized)
         {
             AnalyticsService.Instance?.CustomData("missionCompleted", data);
             AnalyticsService.Instance?.Flush();
