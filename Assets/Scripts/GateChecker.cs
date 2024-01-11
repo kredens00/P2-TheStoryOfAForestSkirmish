@@ -13,8 +13,12 @@ public class GateChecker : MonoBehaviour
     {
         if(PlayerPrefs.HasKey(gateID))
         {
-            open_gate.SetActive(true);
-            close_gate.SetActive(false);
+            if(close_gate != null && open_gate !=null)
+            {
+                open_gate.SetActive(true);
+                close_gate.SetActive(false);
+            }
+           
             gate_collider.SetActive(false);
             Debug.Log("gate open");
         }
