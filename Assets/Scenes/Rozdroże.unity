@@ -6491,6 +6491,16 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1126267210}
+    - target: {fileID: 9152757685830827318, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
+        type: 3}
+      propertyPath: offset.x
+      value: -1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9152757685830827318, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
+        type: 3}
+      propertyPath: offset.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9152757686080754186, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
         type: 3}
       propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
@@ -6616,5 +6626,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1126267210}
+    - target: {fileID: 9152757686473886857, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
+        type: 3}
+      propertyPath: offset.y
+      value: 1.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103, type: 3}

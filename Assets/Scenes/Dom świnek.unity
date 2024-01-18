@@ -7119,6 +7119,16 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1550606589}
+    - target: {fileID: 9152757685830827318, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
+        type: 3}
+      propertyPath: offset.x
+      value: -1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9152757685830827318, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
+        type: 3}
+      propertyPath: offset.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9152757685830827319, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
         type: 3}
       propertyPath: m_text
@@ -7274,6 +7284,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1550606589}
+    - target: {fileID: 9152757686473886857, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
+        type: 3}
+      propertyPath: offset.x
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 9152757686473886860, guid: 47a21d9f2a1cdfc4693b6a3b6e0f4103,
         type: 3}
       propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
