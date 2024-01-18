@@ -7,7 +7,7 @@ public class PlayerInstance : MonoBehaviour
 
     public static PlayerInstance instance;
     public static string respNr;
-    // Start is called before the first frame update
+    
     void Awake()
     {
         if (!instance)
@@ -22,6 +22,6 @@ public class PlayerInstance : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
    
 }
