@@ -16,6 +16,7 @@ public class HideWindows : MonoBehaviour
         if (Menu_hide.Instance.langIsSet)
         {
             langWindow.SetActive(false);
+            mainWindow.SetActive(true);
         }
         if (Menu_hide.Instance.agrIsSet)
         {
