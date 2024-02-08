@@ -1327,8 +1327,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349714576}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -23.85, y: -4.287238, z: 4.9407225}
-  m_LocalScale: {x: 1.7025517, y: 1.15, z: 1}
+  m_LocalPosition: {x: -23.85, y: -4.29, z: 5.09}
+  m_LocalScale: {x: 1.7025517, y: 1.18657, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346277719}
@@ -3694,13 +3694,11 @@ PrefabInstance:
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: graph_finished
       value: 
-      objectReference: {fileID: 11400000, guid: 72a2def96c2905d4e991b5020721f8e2,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: graph_finished_en
       value: 
-      objectReference: {fileID: 11400000, guid: 620ce9fa2d1fbe6429d50cc506964ec3,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: tasks.m_PersistentCalls.m_Calls.Array.size
       value: 4
@@ -6034,7 +6032,7 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: npcID
-      value: 
+      value: empty
       objectReference: {fileID: 0}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: trigger
@@ -6364,6 +6362,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 28ac9fb143b38cb469bd799984f37d3c,
         type: 2}
+    - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
+      propertyPath: npcID
+      value: empty
+      objectReference: {fileID: 0}
     - target: {fileID: 186311496, guid: 9232f5a489fa3e2478b42d85c84ba1f2, type: 3}
       propertyPath: trigger
       value: 
