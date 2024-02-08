@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 614
-    y: 301
+    x: 1372
+    y: 709
     width: 170
     height: 115
   isDragging: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
     characterName: Grzesiu
     text: "Prze\u0142a\u017A przez most, tylko nic nie m\xF3w ch\u0142opakom, \u017Ce
       jad\u0142em."
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 11ecc15929b58184ab4763483726aa66, type: 3}
   parentNode: {fileID: -7861218673483226968}
   childNode: {fileID: 0}
 --- !u!114 &-7861218673483226968
@@ -45,12 +45,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 333
-    y: 259
+    x: 1091
+    y: 667
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
     characterName: Grzesiu
     text: "Bo\u017Ce dzi\u0119kuj\u0119 ci! W ko\u0144cu mog\u0119 zje\u015B\u0107!"

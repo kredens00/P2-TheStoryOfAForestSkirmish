@@ -16,16 +16,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 44
-    y: 322
+    x: 350
+    y: 523
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Kapturek
+    characterName: Kasia
     text: "Dzie\u0144 dobry panu! Pi\u0119kny dzionek dzisiaj mamy, prawda?"
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -2271127631609284839}
 --- !u!114 &-7710733968318792286
@@ -44,8 +44,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 806
-    y: 329
+    x: 1066
+    y: 529
     width: 170
     height: 115
   isDragging: 0
@@ -73,12 +73,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1225
-    y: 490
+    x: 1485
+    y: 690
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
     characterName: Grzesiu
     text: "Ob\xF3z jest za sklepami w lewo, id\u017A tam i powiedz Bogdanowi przy
@@ -102,16 +102,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1018
-    y: 331
+    x: 1278
+    y: 531
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
-    characterName: Kapturek
+    characterName: Kasia
     text: "Co takiego mam dla ciebie zrobi\u0107?"
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: -7710733968318792286}
   childNode: {fileID: 6987506752554434853}
 --- !u!114 &-2271127631609284839
@@ -130,8 +130,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 319
-    y: 326
+    x: 579
+    y: 526
     width: 170
     height: 115
   isDragging: 0
@@ -158,17 +158,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 576
-    y: 340
+    x: 836
+    y: 540
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Kapturek
+    characterName: Kasia
     text: "Op\u0142ata za przej\u015Bcie? Chyba panie zwariowa\u0142e\u015B pan.
       Ide do babci, spieszy mi si\u0119..."
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: -2271127631609284839}
   childNode: {fileID: -7710733968318792286}
 --- !u!114 &11400000
@@ -209,12 +209,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1215
-    y: 328
+    x: 1475
+    y: 528
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
     characterName: Grzesiu
     text: "Jestem okropnie uczulony na gluten, nie mog\u0119 zje\u015B\u0107 niczego

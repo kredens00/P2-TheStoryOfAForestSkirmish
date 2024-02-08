@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 688
-    y: 207
+    x: 1474
+    y: 615
     width: 170
     height: 115
   isDragging: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   sentence:
     characterName: Mama
     text: "Przyjd\u017A do domu na 20, wtedy zaczniemy imprez\u0119! "
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 48aed5e4b7bc8824189c14f32f3987c0, type: 3}
   parentNode: {fileID: -217755019157365852}
   childNode: {fileID: 0}
 --- !u!114 &-217755019157365852
@@ -44,16 +44,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 458
-    y: 190
+    x: 1244
+    y: 599
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Kapturek
+    characterName: Kasia
     text: "Nie ma sprawy mamo, dobrze \u017Ce wszystko dobrze si\u0119 sko\u0144czy\u0142o!"
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: 2930488110778653670}
   childNode: {fileID: -7839893571806416007}
 --- !u!114 &11400000
@@ -90,8 +90,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 233
-    y: 186
+    x: 1019
+    y: 594
     width: 170
     height: 115
   isDragging: 0

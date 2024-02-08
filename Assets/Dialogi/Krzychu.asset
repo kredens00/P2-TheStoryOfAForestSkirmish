@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8733776055087898572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1061
+    y: 618
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kasia
+    text: "I pewnie ci\u0119 boli krzy\u017C, jak Bogdana?"
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
+  parentNode: {fileID: 2425624581764823730}
+  childNode: {fileID: 7883996681511728767}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Krzychu
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: 2425624581764823730}
+  - {fileID: -8733776055087898572}
+  - {fileID: 6831672012314489448}
+  - {fileID: 7883996681511728767}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &2425624581764823730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 813
+    y: 623
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Krzychu
+    text: "Mia\u0142em wczoraj spotkanie towarzyskie z Bogdanem, omawiali\u015Bmy
+      wa\u017Cne sprawy ale nie pami\u0119tam co dok\u0142adnie..."
+    characterSprite: {fileID: 21300000, guid: 4c6ded56c8ecd394d9bfb4d5567f1871, type: 3}
+  parentNode: {fileID: 6831672012314489448}
+  childNode: {fileID: -8733776055087898572}
+--- !u!114 &6831672012314489448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 474
+    y: 583
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Kasia
+    text: Haaalooo, co to za obozowisko?!
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: 2425624581764823730}
+--- !u!114 &7883996681511728767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1285
+    y: 710
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Krzychu
+    text: "Taaa....znasz Bogdana? To mam pro\u015Bb\u0119.. daj mu ten klucz i powiedz,
+      \u017Ce dzisiejsze spotkanie musimy odwo\u0142a\u0107..."
+    characterSprite: {fileID: 21300000, guid: 4c6ded56c8ecd394d9bfb4d5567f1871, type: 3}
+  parentNode: {fileID: -8733776055087898572}
+  childNode: {fileID: 0}
