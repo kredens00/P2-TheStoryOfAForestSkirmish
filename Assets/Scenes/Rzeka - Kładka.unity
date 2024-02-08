@@ -6965,6 +6965,11 @@ PrefabInstance:
       propertyPath: onAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3629504090547267936, guid: 8ae371dba2dac414bbcf5115708a13e6,
+        type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 10d00232995ea8742805883a08aa60b1, type: 3}
     - target: {fileID: 3629504090547267937, guid: 8ae371dba2dac414bbcf5115708a13e6,
         type: 3}
       propertyPath: OutputAudioMixerGroup
