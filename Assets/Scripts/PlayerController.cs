@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using Unity.VisualScripting;
+using Unity.Services.Analytics;
+using Unity.Services.Core;
+using UnityEngine.Analytics;
+using CleverCrow.Fluid.QuestJournals;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,9 +19,10 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sprite;
     
+    
     bool isSprinting;
 
-
+    public ParticleSystem particleSystem;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -27,7 +33,14 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        
+         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            if (!particleSystem.isPlaying)
+            {
+                particleSystem.Play();
+            }
+        }
+
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
@@ -107,9 +120,36 @@ public class PlayerController : MonoBehaviour
 
     public void RestartLevel()
     {
+        
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("End_game");
+        PlayerInstance.Destroy(gameObject);
+        Inventory inv = GameObject.FindObjectOfType<Inventory>();
+        InventoryUI invUI = GameObject.FindObjectOfType<InventoryUI>();
+        QuestJournalManager qMenu = GameObject.FindObjectOfType<QuestJournalManager>();
+        Destroy(qMenu);
+        Destroy(invUI);
+        Destroy(inv);
+        
+        SceneManager.LoadScene("Smierc_grzyb");
+        OnEatEvent();
         
         
+    }
+
+    private void OnEatEvent()
+    {
+        if (UnityServices.State == ServicesInitializationState.Initialized)
+        {
+            Analytics.CustomEvent("MushroomDeath");
+            AnalyticsService.Instance.CustomData("MushroomDeath");
+            AnalyticsService.Instance.Flush();
+            Debug.Log("Event sent");
+        }
+        else
+        {
+            Debug.Log("Analytics not initialized");
+            return;
+        }
+
     }
 }

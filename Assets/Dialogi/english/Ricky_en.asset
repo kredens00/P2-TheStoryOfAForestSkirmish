@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2459372906089798006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 484
+    y: 398
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 1
+  sentence:
+    characterName: Ricky
+    text: I got really drunk with Bogdan yesterday, we drank and smoked until 4a.m.
+      ... I don't remember anything, I woke up when I was already lying in the pipe....
+    characterSprite: {fileID: 21300000, guid: c2b1364d7f039b44dbeae755ec5cc826, type: 3}
+  parentNode: {fileID: 7153536676940593466}
+  childNode: {fileID: 2473536299603579547}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Ricky_en
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: 7153536676940593466}
+  - {fileID: -2459372906089798006}
+  - {fileID: 6497034512792458587}
+  - {fileID: 2473536299603579547}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &2473536299603579547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 697
+    y: 406
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 1
+  sentence:
+    characterName: Red hood
+    text: And your back probably hurts, just like Bogdan's
+    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+  parentNode: {fileID: -2459372906089798006}
+  childNode: {fileID: 6497034512792458587}
+--- !u!114 &6497034512792458587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 899
+    y: 408
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 1
+  sentence:
+    characterName: Ricky
+    text: Yeah.... Do you know Bogdan? If so, I have a request... Give him that key
+      and tell him we don't drink today...
+    characterSprite: {fileID: 21300000, guid: c2b1364d7f039b44dbeae755ec5cc826, type: 3}
+  parentNode: {fileID: 2473536299603579547}
+  childNode: {fileID: 0}
+--- !u!114 &7153536676940593466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 271
+    y: 395
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 1
+  sentence:
+    characterName: Red hood
+    text: Hey, why are you sleeping in a pipe?!
+    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -2459372906089798006}

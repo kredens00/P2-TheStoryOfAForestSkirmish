@@ -1,8 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.Localization;
+using UnityEngine.UI;
 
 public class ItemPickup : Interactable
 {
@@ -11,7 +15,7 @@ public class ItemPickup : Interactable
     public UnityEvent tasks;
     public Item item;
     public string itemID;
-
+   
     private void Start()
     {
         if (PlayerPrefs.HasKey(itemID))
@@ -31,9 +35,12 @@ public class ItemPickup : Interactable
       bool wasPickedUp =  Inventory.Instance.Add(item);
         if (wasPickedUp)
         {
+            
             tasks.Invoke();
             SavePickedUpItem();
             Destroy(gameObject);
+           
+            StartCoroutine(PickUpUi());
             
         }
 
@@ -47,6 +54,56 @@ public class ItemPickup : Interactable
             PlayerPrefs.Save();
         }
        
+        
+    }
+
+    public IEnumerator PickUpUi()
+    {
+        GameObject pickupUi = GameObject.FindGameObjectWithTag("PickupMenu");
+        
+        
+        TextMeshProUGUI textUi = pickupUi.GetComponentInChildren<TextMeshProUGUI>();
+        
+       
+      if (PlayerPrefs.GetInt("LocaleKey") == 1)
+        {
+            item.name = item.en_name;
+        }
+        textUi.enabled= true;
+        textUi.text += item.name;
+
+        pickupUi.GetComponent<Image>().enabled = true;
+
+        yield return null;
+        Debug.Log("1 sekunda");
+        
+        
+
+       /* GameObject pickupUi1 = GameObject.FindGameObjectWithTag("PickupMenu");
+        pickupUi1.SetActive(false);
+
+        TextMeshProUGUI textUi1 = pickupUi1.GetComponentInChildren<TextMeshProUGUI>();
+
+        textUi1.text = "";
+        pickupUi1.GetComponent<Image>().enabled = false;
+        textUi1.enabled = false;
+        yield return null;*/
+        
+        
+        
+
+    }
+    public IEnumerator CloseUi()
+    {
+        yield return new WaitForSeconds(1);
+        GameObject pickupUi1 = GameObject.FindGameObjectWithTag("PickupMenu");
+        
+        TextMeshProUGUI textUi1 = pickupUi1.GetComponentInChildren<TextMeshProUGUI>();
+
+        textUi1.text = "Podniesiono: ";
+        pickupUi1.GetComponent<Image>().enabled = false;
+        textUi1.enabled = false;
+        
         
     }
 }

@@ -14,8 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodesList:
   - {fileID: 6577998268680670515}
+  - {fileID: 2643712361176763010}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
+--- !u!114 &2643712361176763010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 590
+    y: 323
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: .......
+    text: .......
+    characterSprite: {fileID: 21300000, guid: 43a2e68206058ce4ebbbecdcb7ea43db, type: 3}
+  parentNode: {fileID: 6577998268680670515}
+  childNode: {fileID: 0}
 --- !u!114 &6577998268680670515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,8 +61,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 703
-    y: 442
+    x: 296
+    y: 253
     width: 170
     height: 115
   isDragging: 0
@@ -43,4 +72,4 @@ MonoBehaviour:
     text: ..........
     characterSprite: {fileID: 21300000, guid: 43a2e68206058ce4ebbbecdcb7ea43db, type: 3}
   parentNode: {fileID: 0}
-  childNode: {fileID: 0}
+  childNode: {fileID: 2643712361176763010}

@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Tabela1 Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Tabela1
+  m_TableCollectionNameGuidString: 9ddec42eac545ec438a9f27d44ef16e4
+  m_Entries:
+  - m_Id: 5207990272
+    m_Key: TytulKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2465796431872
+    m_Key: TitleGameText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10642164260864
+    m_Key: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10843880923136
+    m_Key: Menu2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11452394741760
+    m_Key: Menu3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12331550220288
+    m_Key: Ustawienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12637709246464
+    m_Key: Jakosc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12818286616576
+    m_Key: "G\u0142osnosc"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12995764396032
+    m_Key: PelnyEkran
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13513568002048
+    m_Key: Pauza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13766086074368
+    m_Key: Zadania
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13859333840896
+    m_Key: Interakcje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14057598590976
+    m_Key: Ekwipunek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14287597445120
+    m_Key: Poruszanie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12910917963194368
+    m_Key: Zbieranie danych
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12911293928022016
+    m_Key: nie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12911484819185664
+    m_Key: tak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12913571883884544
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12951882098327552
+    m_Key: Menu_pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15190754459361280
+    m_Key: Zrobione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15190969316777984
+    m_Key: Zadani
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17639481715433472
+    m_Key: Podniesiono
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32861322637713408
+    m_Key: SpacjaSkip
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6330744309007515651
+  references:
+    version: 2
+    RefIds:
+    - rid: 6330744309007515651
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1697740960544

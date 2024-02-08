@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Localization;
 
 
 public class NpcDialog : MonoBehaviour
@@ -17,12 +18,18 @@ public class NpcDialog : MonoBehaviour
 
     [SerializeField]
     private DialogNodeGraph graph_finished;
-    
+
+    [SerializeField]
+    private DialogNodeGraph graph_en;
+
+    [SerializeField]
+    private DialogNodeGraph graph_finished_en;
+
     [SerializeField]
     public UnityEvent tasks;
 
     private bool isTalking;
-    private bool isFinished;
+    private bool isFinished = false;
     public GameObject dialogCanvas;
     public string npcID;
     public GameObject npc;
@@ -46,7 +53,7 @@ public class NpcDialog : MonoBehaviour
         
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
         PlayerController playerController = GameObject.FindObjectOfType<PlayerController>();
         
@@ -57,7 +64,7 @@ public class NpcDialog : MonoBehaviour
         {
             
 
-            if (collision.gameObject.CompareTag("Player") == true && !isFinished)
+            if (other.gameObject.CompareTag("Player") == true && !isFinished)
             {
                 if (npcID != "")
                 {
@@ -65,9 +72,20 @@ public class NpcDialog : MonoBehaviour
                     PlayerPrefs.Save();
                 }
 
-                trigger.StartDialog(graph);
-                isFinished = true;
-                tasks.Invoke();
+                if(PlayerPrefs.GetInt("LocaleKey") == 1)
+                {
+                    if (graph_en != null)
+                    trigger.StartDialog(graph_en);
+                    isFinished = true;
+                    tasks.Invoke();
+                } else
+                {
+                    trigger.StartDialog(graph);
+                    isFinished = true;
+                    tasks.Invoke();
+                }
+
+               
                 
 
             }
@@ -76,10 +94,19 @@ public class NpcDialog : MonoBehaviour
             {
                 if (graph_finished != null)
                 {
-                   
-                    trigger.StartDialog(graph_finished);
+                    if (PlayerPrefs.GetInt("LocaleKey") == 1)
+                    {
+                        if(graph_finished_en != null)
+                        trigger.StartDialog(graph_finished_en);
+                    }
+                    else
+                    {
 
+                        trigger.StartDialog(graph_finished);
+
+                    }
                 }
+                
                 
                
                 
@@ -94,9 +121,9 @@ public class NpcDialog : MonoBehaviour
     } 
     
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if(collision.gameObject.CompareTag("Player") == true)
+        if(other.gameObject.CompareTag("Player") == true)
         {
             isTalking = false;
             dialogCanvas.SetActive(false);

@@ -24,7 +24,7 @@ public class InventoryUI : MonoBehaviour
             Instance = this;
         }
 
-
+        
     }
 
     void Start()
