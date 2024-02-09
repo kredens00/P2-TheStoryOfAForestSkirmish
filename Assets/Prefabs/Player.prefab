@@ -66,6 +66,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 3
   sprintSpeed: 6
+  particleSystem: {fileID: 0}
 --- !u!54 &700915847402449954
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -149,7 +150,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

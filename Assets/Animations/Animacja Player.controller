@@ -61,7 +61,7 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: pickup
     m_EventTreshold: 0
-  - m_ConditionMode: 4
+  - m_ConditionMode: 3
     m_ConditionEvent: Speed
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
@@ -117,7 +117,7 @@ AnimatorStateMachine:
     m_Position: {x: 440, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4035641456291888520}
-    m_Position: {x: 440, y: -30, z: 0}
+    m_Position: {x: 560, y: -100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8777156943204393992}
     m_Position: {x: 670, y: 10, z: 0}

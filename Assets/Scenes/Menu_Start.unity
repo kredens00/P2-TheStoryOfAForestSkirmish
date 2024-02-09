@@ -2353,10 +2353,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3739474814702849535, guid: 7f4909c13ec095242baaaad4efc7ec75,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3739474814724315954, guid: 7f4909c13ec095242baaaad4efc7ec75,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739474814735980156, guid: 7f4909c13ec095242baaaad4efc7ec75,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739474814735980157, guid: 7f4909c13ec095242baaaad4efc7ec75,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739474814735980157, guid: 7f4909c13ec095242baaaad4efc7ec75,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739474814735980158, guid: 7f4909c13ec095242baaaad4efc7ec75,
+        type: 3}
+      propertyPath: m_text
+      value: "THE STORY OF THE FOREST \nSKIRMISH"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739474814735980158, guid: 7f4909c13ec095242baaaad4efc7ec75,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2.5761719
       objectReference: {fileID: 0}
     - target: {fileID: 3739474815313739842, guid: 7f4909c13ec095242baaaad4efc7ec75,
         type: 3}
