@@ -16,16 +16,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 437
-    y: 181
+    x: 697
+    y: 473
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Red  hood
+    characterName: Kate
     text: Transit fee? You're crazy! I'm going to grandma, I'm in a hurry...
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: 8053695114260213434}
   childNode: {fileID: 6047387408512337220}
 --- !u!114 &-5612064825962459982
@@ -44,16 +44,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 797
-    y: 171
+    x: 1058
+    y: 462
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Red  hood
+    characterName: Kate
     text: What can I do for you?
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: 6047387408512337220}
   childNode: {fileID: -2269435321211497163}
 --- !u!114 &-4481509927330725236
@@ -72,16 +72,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 84
-    y: 184
+    x: 344
+    y: 477
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
-    characterName: Red  hood
+    characterName: Kate
     text: Good mornig, sir! It's a beautiful day today, isn't it?
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 8053695114260213434}
 --- !u!114 &-2269435321211497163
@@ -100,8 +100,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 940
-    y: 300
+    x: 1200
+    y: 593
     width: 170
     height: 115
   isDragging: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1092
-    y: 429
+    x: 1352
+    y: 722
     width: 170
     height: 115
   isDragging: 0
@@ -181,12 +181,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 611
-    y: 174
+    x: 871
+    y: 467
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Gregory
     text: I don't care! Listen, if you don't have money, you can do one thing for
@@ -210,12 +210,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 263
-    y: 181
+    x: 523
+    y: 474
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Gregory
     text: Hey! Where's the young lady heading? A fee for the bridge is due!

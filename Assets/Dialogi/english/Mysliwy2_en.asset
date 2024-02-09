@@ -16,15 +16,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 258
-    y: 388
+    x: 757
+    y: 727
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Hunter
-    text: 
+    text: Hello again!
     characterSprite: {fileID: 21300000, guid: e9c512afb2bb6a346b7409a9f7f6c6aa, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -8467271513943594073}
@@ -44,16 +44,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 468
-    y: 391
+    x: 967
+    y: 730
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
-    characterName: Red hood
+    characterName: Kate
     text: Can you tell me how to get to my grandma?
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: -8770357259883983820}
   childNode: {fileID: 7817413287852949566}
 --- !u!114 &-46973201929269542
@@ -72,12 +72,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 895
-    y: 387
+    x: 1394
+    y: 725
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Hunter
     text: B-butt I have something for you. Catch that shotgun for such a tasty drink.
@@ -121,15 +121,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1104
-    y: 387
+    x: 1603
+    y: 726
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: Hunter
-    text: 
+    text: Thanks!
     characterSprite: {fileID: 21300000, guid: e9c512afb2bb6a346b7409a9f7f6c6aa, type: 3}
   parentNode: {fileID: -46973201929269542}
   childNode: {fileID: 0}
@@ -149,12 +149,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 688
-    y: 387
+    x: 1187
+    y: 725
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Hunter
     text: Ohhhhh.... to grandma.... I don't think I remember, I haven't left my house

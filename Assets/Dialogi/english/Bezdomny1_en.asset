@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -190
-    y: 245
+    x: 410
+    y: 682
     width: 170
     height: 115
   isDragging: 0
@@ -44,8 +44,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 230
-    y: 193
+    x: 830
+    y: 630
     width: 170
     height: 115
   isDragging: 0
@@ -73,16 +73,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 524
-    y: 131
+    x: 1124
+    y: 567
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Red hood
+    characterName: Kate
     text: I need a hammer, do you know where can I find it?
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: -4700431876466835749}
   childNode: {fileID: 8300594898283179214}
 --- !u!114 &11400000
@@ -124,8 +124,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 364
-    y: 341
+    x: 964
+    y: 778
     width: 170
     height: 115
   isDragging: 0
@@ -153,15 +153,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 45
-    y: 346
+    x: 645
+    y: 783
     width: 190
     height: 145
   isDragging: 0
   isSelected: 0
   answers:
   - Sir, where can I buy a hammer around here?
-  - I would smoke cigarette myself, but they probably won't sell it to me!
+  - I would smoke cigarette myself!
   - 
   - 
   parentSentenceNode: {fileID: -8504329124314984650}
@@ -186,8 +186,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1007
-    y: 357
+    x: 1607
+    y: 794
     width: 170
     height: 115
   isDragging: 0
@@ -215,16 +215,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 843
-    y: 139
+    x: 1443
+    y: 576
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
-    characterName: Red hood
+    characterName: Kate
     text: For a shoe? What the hell kind of shoe?!
-    characterSprite: {fileID: 21300000, guid: 89c20736d482f264fa5c2f79df06b1c2, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: 8300594898283179214}
   childNode: {fileID: 5923202080488563073}
 --- !u!114 &8300594898283179214
@@ -243,8 +243,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 693
-    y: 361
+    x: 1293
+    y: 798
     width: 170
     height: 115
   isDragging: 0

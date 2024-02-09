@@ -66,7 +66,7 @@ public class NpcDialog : MonoBehaviour
 
             if (other.gameObject.CompareTag("Player") == true && !isFinished)
             {
-                if (npcID != "")
+                if (npcID != "empty")
                 {
                     PlayerPrefs.SetInt(npcID, 1);
                     PlayerPrefs.Save();

@@ -14,6 +14,7 @@ public class Ending : MonoBehaviour
     string endingId;
     private GameObject player;
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -53,7 +54,9 @@ public class Ending : MonoBehaviour
                 SceneManager.LoadScene("GoodEnding1");
             } else
             {
+                
                 SceneManager.LoadScene("GoodEnding1");
+                Destroy(invUI);
             }
             
         }
@@ -70,6 +73,7 @@ public class Ending : MonoBehaviour
             } else
             {
                 SceneManager.LoadScene("BadEnding");
+                Destroy(invUI);
             }
            
         }

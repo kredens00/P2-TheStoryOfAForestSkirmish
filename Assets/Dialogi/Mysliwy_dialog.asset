@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 45
-    y: 302
+    x: 469
+    y: 503
     width: 170
     height: 115
   isDragging: 0
@@ -44,8 +44,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1180
-    y: 359
+    x: 1604
+    y: 560
     width: 170
     height: 115
   isDragging: 0
@@ -73,8 +73,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 777
-    y: 341
+    x: 1201
+    y: 542
     width: 170
     height: 115
   isDragging: 0
@@ -101,16 +101,16 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 580
-    y: 352
+    x: 1004
+    y: 553
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Kapturek
+    characterName: Kasia
     text: "Halo prosze pana! Dusi si\u0119 pan? "
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: 972544669572218476}
   childNode: {fileID: -2182423267214220616}
 --- !u!114 &-1014998223661705269
@@ -129,17 +129,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 973
-    y: 336
+    x: 1397
+    y: 537
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Kapturek
-    text: "Id\u0119 do babci, kt\xF3ra mieszka na skraju lasu! Zna pan pewnie te
+    characterName: Kasia
+    text: "Id\u0119 do babci, kt\xF3ra mieszka na skraju lasu! Zna Pan pewnie te
       okolice, powie mi pan jak tam doj\u015B\u0107?"
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: -2182423267214220616}
   childNode: {fileID: -2559577305570300286}
 --- !u!114 &11400000
@@ -180,8 +180,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 338
-    y: 327
+    x: 762
+    y: 528
     width: 170
     height: 115
   isDragging: 0
@@ -209,15 +209,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1210
-    y: 515
+    x: 1811
+    y: 565
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
-    characterName: Kapturek
+    characterName: Kasia
     text: O matko...
-    characterSprite: {fileID: 21300000, guid: 51c0460bc4f34e14faa26be95e13b312, type: 3}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: -2559577305570300286}
   childNode: {fileID: 0}

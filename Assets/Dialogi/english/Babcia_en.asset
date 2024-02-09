@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 438
-    y: 312
+    x: 1136
+    y: 627
     width: 170
     height: 115
   isDragging: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   sentence:
     characterName: Grandma
     text: Oh... My little girl is coming for some berries!!!
-    characterSprite: {fileID: 21300000, guid: ff61e3ca18cf53e4c96f05431b514909, type: 3}
+    characterSprite: {fileID: 21300000, guid: 709651d5bd64d4b46b583dd93270be46, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 654938366066894709}
 --- !u!114 &11400000
@@ -61,15 +61,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 783
-    y: 317
+    x: 1481
+    y: 633
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Red Hood
+    characterName: Kate
     text: Grandma! Be careful, behind you!
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 16ff14d441305144298f0ea8c58906dd, type: 3}
   parentNode: {fileID: -7299498798252807758}
   childNode: {fileID: 0}
