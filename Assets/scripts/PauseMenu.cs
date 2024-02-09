@@ -5,12 +5,22 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    public GameObject pauseMenuUI;
+    bool SettingsActive = false;
 
+    public GameObject pauseMenuUI;
+    public GameObject settingsUI;
+    public GameObject Blur;
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Escape) && SettingsActive == true)
+        {
+            settingsUI.SetActive(false);
+            GameIsPaused = false;
+            SettingsActive = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && SettingsActive == false)
         {
             if(GameIsPaused)
             {
@@ -20,12 +30,15 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
+
+           
         }
     }
 
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        Blur.SetActive(false);
         Time.timeScale = 1;
         GameIsPaused = false;
 
@@ -34,14 +47,18 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuUI.SetActive(true);
+        Blur.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
 
     }
 
-    public void LoadMenu()
+    public void LoadSettings()
     {
-        Debug.Log("Loading Menu");
+        settingsUI.SetActive(true);
+        SettingsActive = true;
+       
+
     }
 
     public void QuitGame()
